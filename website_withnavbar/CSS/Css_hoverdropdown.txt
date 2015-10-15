@@ -1,0 +1,28 @@
+.main-nav ul li:hover ul {
+  background: #E5E5E5;
+  display: block;
+  font-size: .9em;
+  font-weight: normal;
+  padding: 4px;
+  position: absolute;
+}
+
+.main-nav ul li ul li {
+  float: none;
+  display: none;
+  border-left: none;
+  position: relative;
+}
+
+/*dropdown extension*/
+.main-nav ul li ul li a {
+  width: 150px;
+  padding: 15px 10px;
+  border-top: dotted 1px #995C00;
+  color: #002900;
+}
+
+/* First Level drop-down */
+.main-nav ul li ul {
+  display: none;
+}
