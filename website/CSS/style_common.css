@@ -16,7 +16,7 @@ html{
    cursor: default;
    /*background: #fff url(../images/bgimg.jpg) no-repeat center center;*/
 }
-#testtext{
+.infotext{
 	padding-left: 10px;
 	padding-right: 10px;
    margin-right: auto;
