@@ -1,0 +1,254 @@
+/*Author: C_S_W_D: Michael Gusmano, Asif Huda, Syeda, Nosheen, and Joe
+License: Pending CSS v1.5 --*/
+*{box-sizing: border-box;}
+[class*="col-"] {
+
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+html { 
+  background-color: #FFFFFF;
+}
+
+#superhead {
+	background-color: #CF7100;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    padding-top: 10px;
+	padding-bottom: 6px;
+}
+.header {
+    color: #333333;
+    display: inline-block;
+    font-size: .9em;
+    line-height: 15px;
+    overflow: hidden;
+    vertical-align: middle;
+        width: 400px;
+    }
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 100px;
+	background-color: #fff;
+	border-color: #66CC75;
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+body {font-family: 'Source Sans Pro', sans-serif;
+h1   {color: black}
+
+}
+/*travelwrap will contain homepage specific css */
+ .travelwrap{
+	display: inline-block;
+	position: relative;
+	background-color: #CCC;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	vertical-align: top;
+	text-align: center;
+}
+ .travelwrap .destinationwrap{
+
+ }
+/*This is for the Travler's Blog*/
+.travelwrap .BlogHead{
+}
+.travelwrap .BlogEntries{
+
+}
+.BlogEntries img{
+	vertical-align: top;
+}
+ /*This is for the Abous Us page*/
+ .travelwrap .aboutteam{
+	 vertical-align: top;
+
+	}
+.aboutteam img{
+}
+ /*This is for the Contact Us page*/
+ .travelwrap .contact{
+ }
+ 
+ #map {
+	float: left;
+	background-color: #CCC;
+	width: 500px;
+	height: 400px;
+	padding: 4px;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	margin-left: 6%;
+	margin-right: 6%;
+
+}
+ #contact_text {
+	float: left;
+	background-color: #CCC;
+	width: 500px;
+	height: 400px;
+	padding: 4px;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	margin-left: 6%;
+	margin-right: 6%;
+
+}
+ #message{
+	height:165px;
+	width: 400px;}
+ 
+ #email{
+	margin-left: 5px;
+ }
+ /*Above is for the Contact Us page*/
+.footer {
+	display: inline-block;
+	vertical-align: top;
+	color: #000000;
+	background-color: #CCCCCC;
+	position: relative;
+	width: 100%;
+	margin-top: 5%;
+}
+
+.footer .bottomnav{
+	vertical-align: top;
+	color: #000000;
+	margin-left: 5%;
+}
+
+.footer .bottomcontact{
+	vertical-align: top;
+	text-align: center;
+}
+/* ---------- Zoom container ---------- */
+.image-zoom-container {
+	list-style: none;
+	font-size: 0px;
+}
+.zoom-container {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 31%; /* this value + 2 should = 33% */
+	font-size: 16px;
+	font-size: 1rem;
+	border: 1px solid #fff;
+	vertical-align: top;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.zoom-container img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    transition: all .5s ease;
+}
+.zoom-container .zoom-caption {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, .5);
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    transition: all .5s ease;
+}
+.zoom-container .zoom-caption h3 {
+	display: block;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	font-weight: 900;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 23% 0 0;
+	padding: 10px 0;
+	border-top: 5px solid rgba(255, 255, 255, .15);
+	border-bottom: 5px solid rgba(255, 255, 255, .15);
+}
+.zoom-container:hover img {
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+     transform:scale(1.25);
+}
+.zoom-container:hover .zoom-caption {
+	background: none;
+}
+@media (max-width: 1199px) {
+	.container {
+		width: auto;
+		padding: 0 10px;
+	}
+}
+@media (max-width: 767px) {
+
+	.zoom-container {
+		width: 50%;
+	}
+}
+@media (max-width: 480px) {
+	
+	.zoom-container {
+		width: 100%;
+	}
+	#map{
+		width: 100%;
+	}
+}
+
+
