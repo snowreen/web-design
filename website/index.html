@@ -2,7 +2,10 @@
 <head>
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		 <link rel="stylesheet" type="text/css" href="CSS/style_dropdownmenu.css">
+		 <link rel="stylesheet" href="CSS/style_search.css">
+		 <link rel="stylesheet" href="CSS/slicknav.css">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 		<title>History Travel</title>
 </head>
 
@@ -10,19 +13,18 @@
 
 <header>
 		<div class="row">
-  <div class="col-3"></div>
   <div class="col-12">
 		<div id="superhead">
-        <img src="http://icons.iconarchive.com/icons/vicing/rounder/48/Globe-icon.png" alt="Logo"><b>History Travel</b>
+        <img src="#" alt="Logo"><b>History Travel</b>
         <h1 class="header">Ancient  | History | Travel | Food</h1>
-		<div id="headsolid"></div>
         </div>	
 </div>
 </div>
 </header>
-
-<nav class="main-nav">
-<ul>
+<div class="row">
+	<div class="col-12">
+<nav class="mobile-nav">
+<ul id="menu">
         <li><a href="homepage.html">Home</a></li>
 		
 		<li><a href="#">Locations<span class="drop-down"></a>
@@ -57,6 +59,8 @@
 		<li><a href="contact.html">Contact Us</a></li>
       </ul>
 </nav>
+</div>
+</div>
 
 <br>
 <br>
@@ -146,7 +150,7 @@
   <div class = "bottomnav">
      <h4>Navigation</h4>
   <ul>
-			 <li><a href="homepage.html">Home</a></li>
+			 <li><a href="index.html">Home</a></li>
 			 <li><a href="gallery.html">Gallery</a></li>
 			 <li><a href="blog.html">Traveler's Blog</a></li>
         	 <li><a href="about.html">About Us</a></li>
@@ -164,7 +168,13 @@
 </footer>
 </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src=".Scripts/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
 </body>
 </html>
