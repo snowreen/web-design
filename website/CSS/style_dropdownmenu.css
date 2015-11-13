@@ -1,7 +1,26 @@
 /*Author: C_S_W_D: Michael Gusmano, Asif Huda, Syeda, Nosheen, and Joe
-License: Pending CSS v1.0
+License: Pending CSS v1.5
 --*/
+[class*="col-"] {
 
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 html { 
   background-color: #F5F5F5;
 }
@@ -11,24 +30,9 @@ html {
     width: 100%;
     position: relative;
     height: 50px;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	margin: auto;
     padding-top: 10px;
 	padding-bottom: 6px;
 }
-
-#headsolid {
-    background-color: #000000;
-    width: 98%;
-    position: relative;
-    height: 1px;
-    border-radius: 25px;
-    border: 3px solid #000000;
-	margin: auto;
-	padding: 3 px;
-}
-
 .header {
     color: #333333;
     display: inline-block;
@@ -39,103 +43,16 @@ html {
     vertical-align: middle;
     width: 400px;
 }
-    
-.main-nav {
-  background: #989898;
-  /*background: -moz-linear-gradient(top, #7dad16 0%, #547b00 100%);*/
-  /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7dad16), color-stop(100%,#547b00));*/
-  /*background: -webkit-linear-gradient(top, #7dad16 0%,#547b00 100%);*/
-  /*background: -o-linear-gradient(top, #7dad16 0%,#547b00 100%);*/
- /* background: -ms-linear-gradient(top, #7dad16 0%,#547b00 100%);*/
-  /*background: linear-gradient(top, #7dad16 0%,#547b00 100%);*/
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7dad16', endColorstr='#547b00',GradientType=0 );
-  float: left;
-  width: 100%;
-  border-radius: 25px;
-  border: 3px solid #989898;
-  position: relative;
-  z-index: 99999999;
-  /*z index for image positioning */
-}
-.main-nav ul {
-  background: #989898;
-  font-family: 'Droid Sans', sans-serif;
-  font-size: .9em;
-  font-weight: bold;
-  list-style-type: none;
-}
-.main-nav ul li {
-  border-left: 1px solid #CF7100;
-  display: block;
-  float: left;
-}
-
-.main-nav ul li:first-child {
-  border: none;
-}
-/* List Words */
-.main-nav ul li a {
-  color: #002900;
-  display: inline-block;
-  padding: 10px;
-  position: relative;
-  width: 160px;
-  text-decoration: none;
-  text-shadow: 0 1px 1px #CCCCCC;
-}
-.main-nav ul li a span.drop-down {
-  /*background: #FFCC80;*/
-  height: 7px;
-  position: absolute;
-  right: 20px;
-  top: 24px;
-  width: 8px;
-}
-.main-nav ul li:hover {
-  background: #D4D4D4;
-}
-/* First Level drop-down */
-.main-nav ul li ul {
-  display: none;
-}
-.main-nav ul li:hover ul {
-  background: #E5E5E5;
-  display: block;
-  font-size: .9em;
-  font-weight: normal;
-  padding: 4px;
-  position: absolute;
-}
-.main-nav ul li ul li {
-  float: none;
-  display: block;
-  border-left: none;
-  position: relative;
-}
-
-/*dropdown extension*/
-.main-nav ul li ul li a {
-  width: 165px;
-  padding: 15px 10px;
-  border-top: dotted 1px #995C00;
-  color: #002900;
-}
-
-
- body {font-family: Times New Roman, Georgia, Serif;
+body {font-family: Times New Roman, Georgia, Serif;
 h1   {color: black}
 
 }
-
 /*travelwrap will contain homepage specific css */
-
  .travelwrap{
 	display: block;
 	position: relative;
 	width: 84%;
 	background-color: #CCC;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
 	padding-top: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -143,128 +60,21 @@ h1   {color: black}
 	margin-left: auto;
 	margin-right: auto;
 }
- .destinationwrap{
-	display: block;
-	position: static;
-	width: 84%;
-	background-color: #CCC;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
+ .travelwrap .destinationwrap{
  }
-
  /*Above this is css for homepage*/
 /*This is for the Travler's Blog*/
-.BlogHead{
-	display: block;
-	position: relative;
-	width: 84%;
-	background-color: #CCC;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
+.travelwrap .BlogHead{
 }
-.BlogEntries{
-	display: block;
-	position: relative;
-	vertical-align: top;
-	width: 84%;
-	background-color: #CCC;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
+.BlogHead .BlogEntries{
+
 }
 .BlogEntries img{
-	border-radius: 25px;
 	vertical-align: top;
-}
-.Blog1{
-	display: inline-block;
-	position: relative;
-	vertical-align: top;
-	float:none;
-	width: 47%;
-	background-color: #CCC;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-top:auto;
-	margin-bottom:auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-.Blog2{
-	display: inline-block;
-	position: relative;
-	vertical-align: top;
-	width: 47%;
-	background-color: #CCC;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-top:auto;
-	margin-bottom:auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-.Blog3{
-	display: inline-block;
-	position: relative;
-	vertical-align: top;
-	width: 47%;
-	background-color: #CCC;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-top:auto;
-	margin-bottom:auto;
-	margin-left: auto;
-	margin-right: auto;
 }
 .Blog1pic{
 	display: inline-block;
 	position: relative;
-	border-radius: 25px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.Blog2img{
-	display: inline-block;
-	border-radius: 25px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.Blog3pic{
-	display: inline-block;
 	border-radius: 25px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -289,97 +99,18 @@ h1   {color: black}
 	 margin-left: 3%;
 	 margin-right:4%;
  }
- 
- #member1{
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding: 20px;
- }
- #member2{
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding: 20px;
- }
- #member3{
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding: 20px;
- }
- #member4{
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding: 20px;
- }
- #member5{
-	border-radius: 25px;
-    border: 3px solid #CF7100;
-	padding: 20px;
- }
- 
  .memberpics{
 	display: inline-block;
 	vertical-align: top;
 	background-color: #CCC;
 	width: 500px;
-	border-radius: 25px;
-    border: 4px solid #CF7100;
 	padding: 4px;
 	margin-top: 0%;
 	margin-left: 2%;
 	margin-right: 3%;
  }
  .memberpics img{
-	 border-radius: 25px;
- }
- #Asif{
-	width: 250px;
-	border-radius: 25px;
-    border: 3px solid #CF7100; 
-	padding: 10px;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
- }
- #Joe{
-	width: 320px;
-	border-radius: 25px;
-    border: 3px solid #CF7100; 
-	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto; 
- }
- #Michael{
-	width: 320px;
-	border-radius: 25px;
-    border: 3px solid #CF7100; 
-	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
- }
- #Syeda{
-	width: 260px;
-	border-radius: 25px;
-    border: 3px solid #CF7100; 
-	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
- }
- #Nosheen{
-	width: 250px;
-	border-radius: 25px;
-    border: 3px solid #CF7100; 
-	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
- }
+}
  /*This is the end of the Abous Us Styling*/
  /*This is for the Contact Us page*/
  .container{
@@ -389,8 +120,6 @@ h1   {color: black}
 	width:1000px;
 	text-align: center;
 	background-color: #CCC;
-	border-radius: 25px;
-    border: 2px solid #CF7100;
 	padding: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -403,8 +132,6 @@ h1   {color: black}
 	background-color: #CCC;
 	width: 500px;
 	height: 400px;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
 	padding: 4px;
 	margin-top: 1%;
 	margin-bottom: 2%;
@@ -412,14 +139,11 @@ h1   {color: black}
 	margin-right: 6%;
 
 }
-
  #contact_text {
 	float: left;
 	background-color: #CCC;
 	width: 500px;
 	height: 400px;
-	border-radius: 25px;
-    border: 3px solid #CF7100;
 	padding: 4px;
 	margin-top: 1%;
 	margin-bottom: 2%;
@@ -427,8 +151,6 @@ h1   {color: black}
 	margin-right: 6%;
 
 }
-
- 
  #message{
 	height:165px;
 	width: 400px;}
@@ -437,15 +159,11 @@ h1   {color: black}
 	margin-left: 5px;
  }
  /*Above is for the Contact Us page*/
-
-
 .footer {
 	display: inline-block;
 	vertical-align: top;
 	color: #000000;
 	background-color: #CCCCCC;
-	border-radius: 25px;
-    border: 2 px solid #000000;
 	position: static;
 	width: 100%;
 	margin-top: 5%;
@@ -454,23 +172,16 @@ h1   {color: black}
 	margin-right: 0px;
 }
 
-.bottomnav{
-	display: inline-block;
+.footer .bottomnav{
 	vertical-align: top;
 	color: #000000;
 	margin-left: 5%;
 }
 
-.bottomcontact{
-	display: inline-block;
+.footer .bottomcontact{
 	vertical-align: top;
-	margin-left: 10%;
+	text-align: center;
 }
-
-.clearfix {
-    overflow: auto;
-}
-
 /* ---------- Zoom container ---------- */
 .image-zoom-container {
 	list-style: none;
@@ -496,7 +207,6 @@ h1   {color: black}
 	-webkit-transition: all .5s ease; /* Safari and Chrome */
     -moz-transition: all .5s ease; /* Firefox */
     -ms-transition: all .5s ease; /* IE 9 */
-    -o-transition: all .5s ease; /* Opera */
     transition: all .5s ease;
 }
 .zoom-container .zoom-caption {
@@ -510,7 +220,6 @@ h1   {color: black}
 	-webkit-transition: all .5s ease; /* Safari and Chrome */
     -moz-transition: all .5s ease; /* Firefox */
     -ms-transition: all .5s ease; /* IE 9 */
-    -o-transition: all .5s ease; /* Opera */
     transition: all .5s ease;
 }
 .zoom-container .zoom-caption h3 {
@@ -531,7 +240,6 @@ h1   {color: black}
 	-webkit-transform:scale(1.25); /* Safari and Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
      transform:scale(1.25);
 }
 .zoom-container:hover .zoom-caption {

@@ -2,10 +2,10 @@
 <head>
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		 <link rel="stylesheet" href="CSS/style_search.css">
-		 <link rel="stylesheet" href="CSS/slicknav.css">
+		 <link rel="stylesheet" href="./CSS/style_searchmenu.css">
+		 <link rel="stylesheet" href="./CSS/slicknav.css">
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 		<title>History Travel</title>
 </head>
 
@@ -13,19 +13,20 @@
 
 <header>
 		<div class="row">
-  <div class="col-12">
+  <div class="col-10">
 		<div id="superhead">
         <img src="#" alt="Logo"><b>History Travel</b>
         <h1 class="header">Ancient  | History | Travel | Food</h1>
         </div>	
 </div>
+<div class="col-2"><form><input type="search" placeholder="Search"></form></div>
 </div>
 </header>
-<div class="row">
+	<div class="row">
 	<div class="col-12">
-<nav class="mobile-nav">
+<nav id="mobile-nav">
 <ul id="menu">
-        <li><a href="homepage.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
 		
 		<li><a href="#">Locations<span class="drop-down"></a>
           <ul>
@@ -62,11 +63,11 @@
 </div>
 </div>
 
-<br>
-<br>
+<br/>
+<br/>
 
 <div class="row">
-  <div class="col-9"></div>
+  <div class="col-12">
 
 <section class="travelwrap">
  
@@ -82,10 +83,13 @@
 
 </section>
 </div>
+</div>
 
-<br>
+<br/>
  
-     <div class="destinationwrap">
+ <div class="row">
+  <div class="col-12">
+     <section class="destinationwrap">
          <h2>Locations</h2>
 
         <div class="wrapper">
@@ -110,15 +114,14 @@
 					
 					 <span class="zoom-caption"><h3>Europe</h3></span>
                             <a href="europe.html"></a>
-								 <img src="Images/homepage/europeancastle.jpg"  alt="http://farm1.static.flickr.com/29/67708630_cc3a45f1c3.jpg">
+				 <img src="Images/homepage/europeancastle.jpg"  alt="http://farm1.static.flickr.com/29/67708630_cc3a45f1c3.jpg">
 									
 				 </div>
 											 <div class="zoom-container">
 													 
 														 <span class="zoom-caption"><h3>North America</h3></span>
 														 <a href="northamerica.html"></a>
-													<img src="Images/homepage/ruinsofmontezuma.jpg"  alt="https://www.toysperiod.com/images/ruins-of-montezuma-castle-verde-valley-arizona-usa.jpg">
-													
+														 <img src="Images/homepage/ruinsofmontezuma.jpg"  alt="https://www.toysperiod.com/images/ruins-of-montezuma-castle-verde-valley-arizona-usa.jpg">
 											 </div>
 
 	 <div class="zoom-container">
@@ -143,10 +146,13 @@
 		 <!--wrapper-->
 	 </div>
 	 <!--destinationwrap-->
+	</div>
+</section>
+
 <div class="row">
-  <div class="col-3"></div>
   <div class="col-12">
 <footer class="footer">
+
   <div class = "bottomnav">
      <h4>Navigation</h4>
   <ul>
@@ -168,9 +174,9 @@
 </footer>
 </div>
 </div>
-<script src="js1.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src=".Scripts/jquery.slicknav.js"></script>
+<script src="Scripts/js1.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="Scripts/jquery.slicknav.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#menu').slicknav();

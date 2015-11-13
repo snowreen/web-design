@@ -4,16 +4,13 @@ $('html').addClass('js');
 
 $(document).ready(function(){
     $("#travels").click(function(){
-        $("p").toggle();
+        $(this."p").toggle();
     });
 });
 
 
-
-$(function() {
-    $(".dropdown").click(function(){
-      $("li").show();
+jQuery(document).ready(function($) { 
+    $('#menu').slicknav({
+        prependTo:'#menu-mobile'
     });
-});
-
-
+})
