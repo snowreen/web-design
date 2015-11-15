@@ -2,11 +2,7 @@
 License: Pending CSS v1.5 --*/
 * {
   box-sizing: border-box;}
-[class*="col-"] {
-  display: inline-block;
-  position: relative;
-  float: left;
-}
+[class*="col-"] { display: inline-block; position: relative; float: left; }
 .col-1 { width: 8.33%;}
 .col-2 { width: 16.66%; height: 50px; background-color: #CF7100;  padding-top: 5px; padding-bottom: 5px; vertical-align: middle; }
 .col-3 { width: 25%;}
@@ -29,7 +25,6 @@ html {
 }
 #superhead {
 	background-color: #CF7100;
-    width: 100%;
     position: relative;
     height: 50px;
     padding-top: 10px;
@@ -42,7 +37,7 @@ html {
     line-height: 15px;
     overflow: hidden;
     vertical-align: middle;
-        width: 400px;
+    width: 400px;
     }
 input {
 	outline: none;
@@ -85,7 +80,7 @@ h1   {color: black}
 
 }
 /*travelwrap will contain homepage specific css */
- .travelwrap{
+.travelwrap{
 	display: inline-block;
 	position: relative;
 	background-color: #CCC;
@@ -95,10 +90,21 @@ h1   {color: black}
 	padding-bottom: 10px;
 	vertical-align: top;
 	text-align: center;
+	margin-top: 1%;
 }
- .travelwrap .destinationwrap{
+.destinationwrap{
+	display: inline-block;
+	position: relative;
+	background-color: #CCC;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 1%;
+}
 
- }
 /*This is for the Travler's Blog*/
 .travelwrap .BlogHead{
 }
@@ -118,7 +124,6 @@ h1   {color: black}
  /*This is for the Contact Us page*/
  .travelwrap .contact{
  }
- 
  #map {
 	float: left;
 	background-color: #CCC;
@@ -141,15 +146,10 @@ h1   {color: black}
 	margin-bottom: 2%;
 	margin-left: 6%;
 	margin-right: 6%;
-
 }
- #message{
-	height:165px;
-	width: 400px;}
+ #message{ height:165px; width: 400px;}
  
- #email{
-	margin-left: 5px;
- }
+ #email{ margin-left: 5px;}
  /*Above is for the Contact Us page*/
 .footer {
 	display: inline-block;
@@ -158,7 +158,7 @@ h1   {color: black}
 	background-color: #CCCCCC;
 	position: relative;
 	width: 100%;
-	margin-top: 5%;
+	margin-top: 1%;
 }
 .footer .bottomnav{
 	vertical-align: top;
