@@ -1,32 +1,30 @@
 /*Author: C_S_W_D: Michael Gusmano, Asif Huda, Syeda, Nosheen, and Joe
-License: Pending CSS v1.5 --*/
-* {
-  box-sizing: border-box;}
+License: Pending CSS v1.5
+--*/
 [class*="col-"] {
-  display: inline-block;
-  position: relative;
-  float: left;
+
 }
-.col-1 { width: 8.33%;}
-.col-2 { width: 16.66%; height: 50px; background-color: #CF7100;  padding-top: 5px; padding-bottom: 5px; vertical-align: middle; }
-.col-3 { width: 25%;}
-.col-4 { width: 33.33%;}
-.col-5 { width: 41.66%;}
-.col-6 { width: 50%;}
-.col-7 { width: 58.33%;}
-.col-8 { width: 66.66%;}
-.col-9 { width: 75%;}
-.col-10 { width: 83.33%;}
-.col-11 { width: 91.66%;}
-.col-12 { width: 100%;}
-/* ensure later elements do not ignore and override the column rows */
-.row:before, .row:after {
-  content: "";
-  clear: both;
-  display: block;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 html { 
-  background-color: #FFFFFF;
+  background-color: #F5F5F5;
 }
+
 #superhead {
 	background-color: #CF7100;
     width: 100%;
@@ -40,47 +38,12 @@ html {
     display: inline-block;
     font-size: .9em;
     line-height: 15px;
+    margin: 0 0 22px 4px;
     overflow: hidden;
     vertical-align: middle;
-        width: 400px;
-    }
-input {
-	outline: none;
+    width: 400px;
 }
-input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	width: 75px;
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
-}
-input[type=search]:focus {
-	width: 150px;
-	background-color: #fff;
-	border-color: #66CC75;
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	box-shadow: 0 0 5px rgba(109,207,246,.5);
-}
-input:-moz-placeholder {
-	color: #999;
-}
-input::-webkit-input-placeholder {
-	color: #999;
-}
-nav ul{
-	display: none;
-}
-body {font-family: 'Source Sans Pro', sans-serif;
+body {font-family: Times New Roman, Georgia, Serif;
 h1   {color: black}
 
 }
@@ -88,6 +51,7 @@ h1   {color: black}
  .travelwrap{
 	display: inline-block;
 	position: relative;
+	width: 100%;
 	background-color: #CCC;
 	padding-top: 10px;
 	padding-left: 10px;
@@ -97,8 +61,8 @@ h1   {color: black}
 	text-align: center;
 }
  .travelwrap .destinationwrap{
-
  }
+ /*Above this is css for homepage*/
 /*This is for the Travler's Blog*/
 .travelwrap .BlogHead{
 }
@@ -111,10 +75,16 @@ h1   {color: black}
  /*This is for the Abous Us page*/
  .travelwrap .aboutteam{
 	 vertical-align: top;
-
+	 border-radius: 25px;
+	 background-color: #CCC;
+	 padding: 15px;
+	 margin-top: 0%;
+	 margin-left: 3%;
+	 margin-right:4%;
 	}
 .aboutteam img{
 }
+ /*This is the end of the Abous Us Styling*/
  /*This is for the Contact Us page*/
  .travelwrap .contact{
  }
@@ -156,15 +126,17 @@ h1   {color: black}
 	vertical-align: top;
 	color: #000000;
 	background-color: #CCCCCC;
-	position: relative;
+	position: static;
 	width: 100%;
 	margin-top: 5%;
 }
+
 .footer .bottomnav{
 	vertical-align: top;
 	color: #000000;
 	margin-left: 5%;
 }
+
 .footer .bottomcontact{
 	vertical-align: top;
 	text-align: center;
@@ -233,18 +205,20 @@ h1   {color: black}
 	background: none;
 }
 @media (max-width: 1199px) {
-
+	.container {
+		width: auto;
+		padding: 0 10px;
+	}
 }
 @media (max-width: 767px) {
-[class*="col-"] {
-  width: 100%;}
+
 	.zoom-container {
 		width: 50%;
 	}
+
 }
 @media (max-width: 480px) {
-	[class*="col-"] {
-  width: 100%;}
+	
 	.zoom-container {
 		width: 100%;
 	}

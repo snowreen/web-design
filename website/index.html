@@ -8,9 +8,7 @@
    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 		<title>History Travel</title>
 </head>
-
 <body>
-
 <header>
 		<div class="row">
   <div class="col-10">
@@ -19,12 +17,13 @@
         <h1 class="header">Ancient  | History | Travel | Food</h1>
         </div>	
 </div>
-<div class="col-2"><form><input type="search" placeholder="Search"></form></div>
+<div class="col-2"><form><input id="search" type="search" placeholder="Search"></form></div>
 </div>
 </header>
+
 	<div class="row">
 	<div class="col-12">
-<nav id="mobile-nav">
+<nav id="menu-mobile">
 <ul id="menu">
         <li><a href="index.html">Home</a></li>
 		
@@ -64,14 +63,10 @@
 </div>
 
 <br/>
-<br/>
 
 <div class="row">
   <div class="col-12">
-
 <section class="travelwrap">
- 
-
 	<h2>Ancient Adventures</h2>
 			
 				<p>While some think that traveling is a time where one finds relaxation, some of us enjoy a thrilling expedition.
@@ -86,7 +81,6 @@
 </div>
 
 <br/>
- 
  <div class="row">
   <div class="col-12">
      <section class="destinationwrap">
@@ -150,9 +144,9 @@
 </section>
 
 <div class="row">
-  <div class="col-12">
+<div class="col-12">
 <footer class="footer">
-
+ <div class="col-3">
   <div class = "bottomnav">
      <h4>Navigation</h4>
   <ul>
@@ -163,13 +157,15 @@
 			 <li><a href="contact.html">Contact Us</a></li>
 														</ul>
    </div>
-   
+</div>
+    <div class="col-3">
    <div class = "bottomcontact">
      <h4>Contact Us</h4>
      <p>26 East Pearson Street</p>
      <p> Chicago, IL USA</p>
      <p>1-800-Travel1(8728351)</p> <a href="http://www.luc.edu">www.luc.edu</a>
 
+   </div>
    </div>
 </footer>
 </div>
@@ -179,7 +175,9 @@
 <script src="Scripts/jquery.slicknav.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-	$('#menu').slicknav();
+	$('#menu').slicknav({
+        prependTo:'#menu-mobile'
+    });
 });
 </script>
 </body>
