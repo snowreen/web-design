@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <head>
-	 <meta charset="utf-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
-		 <link rel="stylesheet" type="text/css" href="CSS/style_dropdownmenu.css">
-     <title>About Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style_searchmenu.css">
+  <link rel="stylesheet" href="./CSS/slicknav.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/tipuesearch.css">
+  <title>History Travel</title>
 </head>
-
 <body>
-
 <header>
-		<div class="row">
-  <div class="col-3"></div>
-  <div class="col-12">
-		<div id="superhead">
-        <img src="http://icons.iconarchive.com/icons/vicing/rounder/48/Globe-icon.png" alt="Logo"><b>History Travel</b>
-        <h1 class="header">Ancient  | History | Travel | Food</h1>
-		<div id="headsolid"></div>
-        </div>	
-</div>
-</div>
-</header>
-
-<nav class="main-nav">
-<ul>
-        <li><a href="homepage.html">Home</a></li>
-		
-		<li><a href="#">Locations<span class="drop-down"></a>
-          <ul id="LocationMenu">
+    <div class="row">
+      <div class="col-10">
+        <div id="superhead">
+          <img src="#" alt="Logo"><b>History Travel</b>
+          <h1 class="header">Ancient  | History | Travel | Food</h1>
+        </div>
+      </div>
+      <div class="col-2"><form action="search.html">
+<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+</form></div>
+    </div>
+  </header>
+  <div class="row">
+    <div class="col-12">
+      <nav id="menu-mobile">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          
+          <li><a href="#">Locations<span class="drop-down"></a>
+          <ul>
             <li><a href="asia.html">Asia</a></li>
             <li><a href="europe.html">Europe</a></li>
             <li><a href="africa.html">Africa</a></li>
             <li><a href="northamerica.html">North America</a></li>
             <li><a href="southamerica.html">South America</a></li>
-			<li><a href="#"> Central America </a></li>
+            <li><a href="#"> Central America </a></li>
           </ul>
         </li>
-
         <li><a href="#">Most Visited<span class="drop-down"></a>
-          <ul id="TopMenu">
-            <li><a href="#">Asia Top 10</a></li>
-            <li><a href="#">Europe Top 10</a></li>
-            <li><a href="#">Africa Top 10</a></li>
-            <li><a href="#">North America Top 10</a></li>
-            <li><a href="#">South America Top 10</a></li>
-			<li><a href="#"> Central America Top 10 </a></li>
-          </ul>
-        </li>
-        <li><a href="#">Wonders of the World<span class="drop-down"></a>
-          <ul id="WondersMenu">
-            <li><a href="#">Ancient</a></li>
-            <li><a href="#">Modern</a></li>
-          </ul>
-        </li>
-        <li><a href="blog.html">Traveler's Blog</a></li>
-        <li><a href="about.html">About Us</a></li>
-		<li><a href="contact.html">Contact Us</a></li>
+        <ul>
+          <li><a href="#">Asia Top 10</a></li>
+          <li><a href="#">Europe Top 10</a></li>
+          <li><a href="#">Africa Top 10</a></li>
+          <li><a href="#">North America Top 10</a></li>
+          <li><a href="#">South America Top 10</a></li>
+          <li><a href="#">Central America Top 10</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Wonders of the World<span class="drop-down"></a>
+      <ul>
+        <li><a href="#">Ancient</a></li>
+        <li><a href="#">Modern</a></li>
       </ul>
+    </li>
+    <li><a href="blog.html">Traveler's Blog</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
 </nav>
-<br/>
-<br/>
+</div>
+</div>
 <div class="container-about">
 
 <section class="aboutteam">
@@ -136,7 +138,20 @@ s
 
    </div>
 </footer>
-
+<script src="Scripts/js1.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="Scripts/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#menu').slicknav({
+prependTo:'#menu-mobile'
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
+});
+</script>
 </body>
-
 </html>
