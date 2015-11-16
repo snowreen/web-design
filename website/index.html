@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="./CSS/style_searchmenu.css">
 	<link rel="stylesheet" href="./CSS/slicknav.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/tipuesearch.css">
 	<title>History Travel</title>
 </head>
 <body>
@@ -16,7 +17,9 @@
 					<h1 class="header">Ancient  | History | Travel | Food</h1>
 				</div>
 			</div>
-			<div class="col-2"><form><input id="search" type="search" placeholder="Search"></form></div>
+			<div class="col-2"><form action="search.html">
+<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+</form></div>
 		</div>
 	</header>
 	<div class="row">
@@ -42,7 +45,7 @@
 					<li><a href="#">Africa Top 10</a></li>
 					<li><a href="#">North America Top 10</a></li>
 					<li><a href="#">South America Top 10</a></li>
-					<li><a href="#"> Central America Top 10 </a></li>
+					<li><a href="#">Central America Top 10</a></li>
 				</ul>
 			</li>
 			<li><a href="#">Wonders of the World<span class="drop-down"></a>
@@ -140,6 +143,7 @@
 	</footer>
 </div>
 </div>
+
 <script src="Scripts/js1.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="Scripts/jquery.slicknav.js"></script>
@@ -148,6 +152,11 @@ $(document).ready(function(){
 	$('#menu').slicknav({
 prependTo:'#menu-mobile'
 });
+});
+</script>
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
 });
 </script>
 </body>
