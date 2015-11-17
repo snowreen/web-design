@@ -4,7 +4,7 @@ License: Pending CSS v1.5 --*/
   box-sizing: border-box;}
 [class*="col-"] { display: inline-block; position: relative; float: left; }
 .col-1 { width: 8.33%;}
-.col-2 { width: 16.66%; height: 50px; background-color: #CF7100;  padding-top: 5px; padding-bottom: 5px; vertical-align: middle; }
+.col-2 { width: 16.66%; height: 50px; background-color: inherit;  padding-top: 5px; padding-bottom: 5px; vertical-align: middle; }
 .col-3 { width: 25%;}
 .col-4 { width: 33.33%;}
 .col-5 { width: 41.66%;}
@@ -24,17 +24,17 @@ html {
   background-color: #FFFFFF;
 }
 #superhead {
-	background-color: #CF7100;
+	background-color: inherit;
     position: relative;
     height: 50px;
-    padding-top: 10px;
+    padding-top: 12px;
 	padding-bottom: 6px;
 }
 .header {
     color: #333333;
     display: inline-block;
-    font-size: .9em;
-    line-height: 15px;
+    font-size: .8em;
+    line-height: 10px;
     overflow: hidden;
     vertical-align: middle;
     width: 400px;
@@ -50,7 +50,7 @@ h1   {color: black}
 .travelwrap{
 	display: inline-block;
 	position: relative;
-	background-color: #CCC;
+	background-color: #FFFFFF;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -133,7 +133,6 @@ h1   {color: black}
 }
 .footer .bottomcontact{
 	vertical-align: top;
-	text-align: center;
 }
 /* ---------- Zoom container ---------- */
 .image-zoom-container {
