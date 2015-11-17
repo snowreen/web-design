@@ -58,6 +58,8 @@ h1   {color: black}
 	vertical-align: top;
 	text-align: center;
 	margin-top: 1%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 .compass{
 	padding-top: 10px;
@@ -124,7 +126,8 @@ h1   {color: black}
 	display: inline-block;
 	vertical-align: top;
 	color: #000000;
-	background-color: rgb(245, 245, 245);;
+	background-color: rgb(245, 245, 245);
+	font-size: 14px;
 	position: relative;
 	width: 100%;
 	margin-top: 1%;
