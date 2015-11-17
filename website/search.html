@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>History Travel Search</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="Scripts/tipuesearch_set.js"></script>
+<script type="text/javascript" src="Scripts/tipuesearch_content.js"></script>
+<script type="text/javascript" src="Scripts/tipuesearch.js"></script>
+	<link rel="stylesheet" href="./CSS/style_searchmenu.css">
+	<link rel="stylesheet" href="./CSS/slicknav.css">
+<link rel="stylesheet" type="text/css" href="CSS/tipuesearch.css">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script type="text/javascript" src="Scripts/tipuesearch.min.js"></script>
+</head><body>
+
+<!-- head -->
+<body>
+	<header>
+		<div class="row">
+			<div class="col-10">
+				<div id="superhead">
+					<img src="#" alt="Logo"><b>History Travel</b>
+					<h1 class="header">Ancient  | History | Travel | Food</h1>
+				</div>
+			</div>
+			<div class="col-2"><form action="search.html">
+<input type="text" name="q" id="tipue_search_input" placeholder="Search" autocomplete="off" required>
+</form></div>
+		</div>
+	</header>
+	<div class="row">
+		<div class="col-12">
+			<nav id="menu-mobile">
+				<ul id="menu">
+					<li><a href="index.html">Home</a></li>
+					
+					<li><a href="#">Locations<span class="drop-down"></a>
+					<ul>
+						<li><a href="asia.html">Asia</a></li>
+						<li><a href="europe.html">Europe</a></li>
+						<li><a href="africa.html">Africa</a></li>
+						<li><a href="northamerica.html">North America</a></li>
+						<li><a href="southamerica.html">South America</a></li>
+						<li><a href="#"> Central America </a></li>
+					</ul>
+				</li>
+				<li><a href="#">Most Visited<span class="drop-down"></a>
+				<ul>
+					<li><a href="#">Asia Top 10</a></li>
+					<li><a href="#">Europe Top 10</a></li>
+					<li><a href="#">Africa Top 10</a></li>
+					<li><a href="#">North America Top 10</a></li>
+					<li><a href="#">South America Top 10</a></li>
+					<li><a href="#">Central America Top 10</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Wonders of the World<span class="drop-down"></a>
+			<ul>
+				<li><a href="#">Ancient</a></li>
+				<li><a href="#">Modern</a></li>
+			</ul>
+		</li>
+		<li><a href="blog.html">Traveler's Blog</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+</nav>
+</div>
+</div>
+<!-- body -->
+<div class="block" style="padding-top: 39px;">
+
+
+<div id="tipue_search_content"></div>
+</div>
+
+<div class="row">
+<div class="col-12">
+	<footer class="footer">
+		<div class="col-3">
+			<div class = "bottomnav">
+				<h4>Navigation</h4>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="blog.html">Traveler's Blog</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class = "bottomcontact">
+				<h4>Contact Us</h4>
+				<p>26 East Pearson Street</p>
+				<p> Chicago, IL USA</p>
+				<p>1-800-Travel1(8728351)</p> <a href="http://www.luc.edu">www.luc.edu</a>
+			</div>
+		</div>
+	</footer>
+</div>
+</div>
+
+<script src="Scripts/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav({
+prependTo:'#menu-mobile'
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
+});
+</script>
+
+</body>
+</html>

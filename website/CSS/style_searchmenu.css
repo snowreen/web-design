@@ -1,132 +1,95 @@
 /*Author: C_S_W_D: Michael Gusmano, Asif Huda, Syeda, Nosheen, and Joe
-License: Pending CSS v1.5
---*/
-[class*="col-"] {
-
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-.row:after {
-    content: "";
-    clear: both;
-    display: block;
-}
+License: Pending CSS v1.5 --*/
+* {
+  box-sizing: border-box;}
+[class*="col-"] { display: inline-block; position: relative; float: left; }
+.col-1 { width: 8.33%;}
+.col-2 { width: 16.66%; height: 50px; background-color: inherit;  padding-top: 5px; padding-bottom: 5px; vertical-align: middle; }
+.col-3 { width: 25%;}
+.col-4 { width: 33.33%;}
+.col-5 { width: 41.66%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58.33%;}
+.col-8 { width: 66.66%;}
+.col-9 { width: 75%;}
+.col-10 { width: 83.33%;}
+.col-11 { width: 91.66%;}
+.col-12 { width: 100%;}
+/* ensure later elements do not ignore and override the column rows */
+.row:before, .row:after {
+  content: "";
+  clear: both;
+  display: block;}
 html { 
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
 }
-
 #superhead {
-	background-color: #CF7100;
-    width: 100%;
+	background-color: inherit;
     position: relative;
     height: 50px;
-    padding-top: 10px;
+    padding-top: 12px;
 	padding-bottom: 6px;
 }
 .header {
     color: #333333;
     display: inline-block;
-    font-size: .9em;
-    line-height: 15px;
-    margin: 0 0 22px 4px;
+    font-size: .8em;
+    line-height: 10px;
     overflow: hidden;
     vertical-align: middle;
     width: 400px;
-}
-body {font-family: Times New Roman, Georgia, Serif;
-h1   {color: black}
+    }
 
+nav ul{
+	display: none;
+}
+body {font-family: 'Source Sans Pro', sans-serif;
+h1   {color: black}
 }
 /*travelwrap will contain homepage specific css */
- .travelwrap{
-	display: block;
+.travelwrap{
+	display: inline-block;
 	position: relative;
-	width: 84%;
-	background-color: #CCC;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 1%;
 }
- .travelwrap .destinationwrap{
- }
- /*Above this is css for homepage*/
+.destinationwrap{
+	display: inline-block;
+	position: relative;
+	background-color: #CCC;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 1%;
+}
 /*This is for the Travler's Blog*/
 .travelwrap .BlogHead{
 }
-.BlogHead .BlogEntries{
+.travelwrap .BlogEntries{
 
 }
 .BlogEntries img{
 	vertical-align: top;
 }
-.Blog1pic{
-	display: inline-block;
-	position: relative;
-	border-radius: 25px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
  /*This is for the Abous Us page*/
- .container-about{
-	 width: 100%;
- }
- 
- .aboutteam{
-	 display: inline-block;
-	 position: static;
+ .travelwrap .aboutteam{
 	 vertical-align: top;
-	 width: 600px;
-	 border-radius: 25px;
-	 background-color: #CCC;
-	 border: 4px solid #CF7100;
-	 padding: 15px;
-	 margin-top: 0%;
-	 margin-left: 3%;
-	 margin-right:4%;
- }
- .memberpics{
-	display: inline-block;
-	vertical-align: top;
-	background-color: #CCC;
-	width: 500px;
-	padding: 4px;
-	margin-top: 0%;
-	margin-left: 2%;
-	margin-right: 3%;
- }
- .memberpics img{
-}
- /*This is the end of the Abous Us Styling*/
- /*This is for the Contact Us page*/
- .container{
-	width: 1200px;
- }
- .contact{
-	width:1000px;
-	text-align: center;
-	background-color: #CCC;
-	padding: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1%;
 
+	}
+.aboutteam img{
+}
+ /*This is for the Contact Us page*/
+ .travelwrap .contact{
  }
- 
  #map {
 	float: left;
 	background-color: #CCC;
@@ -149,38 +112,27 @@ h1   {color: black}
 	margin-bottom: 2%;
 	margin-left: 6%;
 	margin-right: 6%;
-
 }
- #message{
-	height:165px;
-	width: 400px;}
+ #message{ height:165px; width: 400px;}
  
- #email{
-	margin-left: 5px;
- }
+ #email{ margin-left: 5px;}
  /*Above is for the Contact Us page*/
 .footer {
 	display: inline-block;
 	vertical-align: top;
 	color: #000000;
 	background-color: #CCCCCC;
-	position: static;
+	position: relative;
 	width: 100%;
-	margin-top: 5%;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-top: 1%;
 }
-
 .footer .bottomnav{
 	vertical-align: top;
 	color: #000000;
 	margin-left: 5%;
 }
-
 .footer .bottomcontact{
 	vertical-align: top;
-	text-align: center;
 }
 /* ---------- Zoom container ---------- */
 .image-zoom-container {
@@ -246,20 +198,18 @@ h1   {color: black}
 	background: none;
 }
 @media (max-width: 1199px) {
-	.container {
-		width: auto;
-		padding: 0 10px;
-	}
+
 }
 @media (max-width: 767px) {
-
+[class*="col-"] {
+  width: 100%;}
 	.zoom-container {
 		width: 50%;
 	}
-
 }
 @media (max-width: 480px) {
-	
+	[class*="col-"] {
+  width: 100%;}
 	.zoom-container {
 		width: 100%;
 	}
