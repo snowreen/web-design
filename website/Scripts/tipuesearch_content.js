@@ -10,7 +10,10 @@ var tipuesearch = {"pages": [
      {"title": "Home", "text": "An occasional blog covering CSS, web development, etc.", "tags": "Home", "url": "index.html"},
      {"title": "Contact Us", "text": "This page provides our contact information.", "tags": "contact", "url": "contact.html"},
      {"title": "Traveler's Blog", "text": "This page shares our sites stories.", "tags": "blog", "url": "blog.html"},
-     {"title": "About Us", "text": "This page provides information about our team.", "tags": "about us team", "url": "about.html"}
+     {"title": "About Us", "text": "This page provides information about our team.", "tags": "about us team", "url": "about.html"},
+     {"title": "Google", "text": "Search Engine", "tags": "Google search", "url": "www.google.com"},
+     {"title": "Yahoo", "text": "Search Engine", "tags": "Yahoo search", "url": "www.yahoo.com"},
+     {"title": "Bing", "text": "Search Engine", "tags": "Bing search", "url": "www.bing.com"}
 ]};
 
 
