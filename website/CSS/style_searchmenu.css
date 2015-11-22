@@ -9,7 +9,7 @@ License: Pending CSS v1.5 --*/
 .col-3 { width: 25%;}
 .col-4 { width: 33.33%;}
 .col-5 { width: 41.66%;}
-.col-6 { width: 45%; background-color: rgb(245, 245, 245);}
+.col-6 { width: 50%; background-color: rgb(245, 245, 245);}
 .col-7 { width: 58.33%;}
 .col-8 { width: 66.66%;}
 .col-9 { width: 75%;}
@@ -118,7 +118,9 @@ h1   {color: black}
 .aboutteam img{
 }
  /*This is for the Contact Us page*/
- .travelwrap .contact{
+.contact{
+ 	margin-left: 25%;
+ 	margin-right: 25%;
  }
  #map {
 	display: inline-block;
@@ -127,9 +129,8 @@ h1   {color: black}
 	height: 400px;
 	padding: 4px;
 	margin-top: 1%;
-	margin-bottom: 2%;
 	margin-left: 6%;
-	margin-right: 6%;
+	margin-right: 8.33%;
 
 }
  #contact_text {
@@ -140,8 +141,7 @@ h1   {color: black}
 	height: 400px;
 	padding: 4px;
 	margin-top: 1%;
-	margin-bottom: 2%;
-	margin-left: 6%;
+	margin-left: 8.33%;
 }
  #message{ height:165px; width: 400px;}
  
@@ -300,6 +300,9 @@ h1   {color: black}
 	.zoom-container {
 		width: 100%;
 		height: auto;
+	}
+	.zoom-container .zoom-caption {
+		background: none;
 	}
 	#map{
 		width: 100%;
