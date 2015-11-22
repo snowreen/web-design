@@ -121,7 +121,7 @@ h1   {color: black}
  .travelwrap .contact{
  }
  #map {
-	float: left;
+	display: inline-block;
 	background-color: #CCC;
 	width: 500px;
 	height: 400px;
@@ -133,15 +133,15 @@ h1   {color: black}
 
 }
  #contact_text {
-	float: left;
+	display: inline-block;
 	background-color: #CCC;
+	vertical-align: top;
 	width: 500px;
 	height: 400px;
 	padding: 4px;
 	margin-top: 1%;
 	margin-bottom: 2%;
 	margin-left: 6%;
-	margin-right: 6%;
 }
  #message{ height:165px; width: 400px;}
  
