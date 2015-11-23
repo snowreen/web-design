@@ -4,7 +4,7 @@ License: Pending CSS v1.5 --*/
   box-sizing: border-box;}
 [class*="col-"] { display: inline-block; position: relative; float: left; }
 
-.col-1 { width: 8.33%;}
+.col-1 { width: 8.33%; margin-left: 8.33%;}
 .col-2 { width: 16.66%; height: 60px; background-color: #1d508d; padding-top: 10px; padding-bottom: 5px; vertical-align: middle;}
 .col-3 { width: 25%;}
 .col-4 { width: 33.33%;}
@@ -114,6 +114,34 @@ h1   {color: black}
 	vertical-align: top;
 }
  /*This is for the Abous Us page*/
+ .about{
+ 	text-align: center;
+ 	margin-left: 25%;
+ 	margin-right: 25%;
+ 	}
+ .team{
+ 	margin-left: 2%;
+ 	margin-right: 2%;
+ 	text-align: justify;
+ }	
+.team div.item {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: auto;
+}
+.team img {
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
  .container-about{
  	background-color: rgb(245, 245, 245);
  	margin-left: 8.33%;
@@ -124,6 +152,7 @@ h1   {color: black}
  	margin-left: 25%;
  	margin-right: 25%;
  }
+
  }
  .aboutteam{
  	background-color: rgb(245, 245, 245);
@@ -382,4 +411,5 @@ li.twitter { background-image:url("../images/socialmedia/twitter.png"); }
 
 #css3 li:hover { opacity:1; }
 #css3 li:hover a strong { opacity:1; top:-10px; }
+
 
