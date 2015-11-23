@@ -135,7 +135,6 @@ h1   {color: black}
 }
  #contact_text {
 	display: inline-block;
-	background-color: #CCC;
 	vertical-align: top;
 	width: 500px;
 	height: 400px;
@@ -143,10 +142,7 @@ h1   {color: black}
 	margin-top: 1%;
 	margin-left: 8.33%;
 }
- #message{ height:165px; width: 400px;}
- 
- #email{ margin-left: 5px;}
- /*Above is for the Contact Us page*/
+
 .footer {
 	display: inline-block;
 	vertical-align: top;
