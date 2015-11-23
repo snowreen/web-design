@@ -74,7 +74,7 @@ h1   {color: black}
 	text-align: center;
 	margin-top: 1%;
 	margin-left:1%;
-	width: 49%;
+	width: 50%;
 }
 #slideshow{
 	display: inline-block;
@@ -92,7 +92,7 @@ h1   {color: black}
 .destinationwrap{
 	display: inline-block;
 	position: relative;
-	background-color: rgb(245, 245, 245);;
+	background-color: rgb(245, 245, 245);
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -102,20 +102,37 @@ h1   {color: black}
 	margin-top: 1%;
 }
 /*This is for the Travler's Blog*/
-.travelwrap .BlogHead{
+ .BlogHead{
+	margin-left: 25%;
+ 	margin-right: 25%;
 }
-.travelwrap .BlogEntries{
-
+.destinationwrap .BlogEntries{
+	margin-left: 8.33%;
+ 	margin-right: 8.33%;
 }
 .BlogEntries img{
 	vertical-align: top;
 }
  /*This is for the Abous Us page*/
+ .container-about{
+ 	background-color: rgb(245, 245, 245);
+ 	margin-left: 8.33%;
+ 	margin-right: 8.33%;
+ }	
+.container-about h2{
+ 	margin-left: 25%;
+ 	margin-right: 25%;
+ }
+ }
  .aboutteam{
+ 	background-color: rgb(245, 245, 245);
 	 vertical-align: top;
-
+	 margin: 0;
+	 text-align: center;
 	}
 .aboutteam img{
+	margin-right: 8%;
+	margin-left: 30%;
 }
  /*This is for the Contact Us page*/
 .contact{
@@ -124,7 +141,6 @@ h1   {color: black}
  }
  #map {
 	display: inline-block;
-	background-color: #CCC;
 	width: 500px;
 	height: 400px;
 	padding: 4px;
