@@ -86,7 +86,7 @@ h1   {color: black}
 	vertical-align: top;
 	text-align: center;
 	margin-top: 1%;
-	width: 49%;
+	width: 50%;
 	margin-right: 1%;
 }
 .destinationwrap{
@@ -111,7 +111,7 @@ h1   {color: black}
 	vertical-align: top;
 }
  /*This is for the Abous Us page*/
- .travelwrap .aboutteam{
+ .aboutteam{
 	 vertical-align: top;
 
 	}
