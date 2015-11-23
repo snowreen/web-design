@@ -1,4 +1,4 @@
-/*Author: C_S_W_D: Michael Gusmano, Asif Huda, Syeda, Nosheen, and Joe
+	/*Author: C_S_W_D: Michael Gusmano, Asif Huda, Syeda, Nosheen, and Joe
 License: Pending CSS v1.5 --*/
 * {
   box-sizing: border-box;}
@@ -269,7 +269,7 @@ h1   {color: black}
     width: 100%;
     height: 100%;
     text-align: center;
-    top: 0;
+    top: -15%;
     left: 0;
     background: rgba(0,0,0,0.8);
 }
