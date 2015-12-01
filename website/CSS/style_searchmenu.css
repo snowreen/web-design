@@ -120,9 +120,7 @@ h1   {color: black}
  	margin-right: 25%;
  	}
 .team{
- 	margin-left: 2%;
- 	margin-right: 2%;
- 	text-align: justify;
+	margin-left: 0;
  }	
 .team div.item {
     /* To correctly align image, regardless of content height: */
@@ -132,6 +130,7 @@ h1   {color: black}
     text-align: center;
     /* The width of the container also implies margin around the images. */
     width: auto;
+    padding: 10px;
 }
 .team img {
     width: auto;
