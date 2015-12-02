@@ -78,8 +78,6 @@ h1   {color: black}
 	padding-bottom: 10px;
 	vertical-align: top;
 	text-align: center;
-	margin-top: 1%;
-	margin-left:1%;
 	width: 50%;
 }
 #slideshow{
@@ -172,8 +170,7 @@ h1   {color: black}
 	height: 400px;
 	padding: 4px;
 	margin-top: 1%;
-	margin-left: 6%;
-	margin-right: 8.33%;
+	margin-left: 5%;
 
 }
  #contact_text {
@@ -183,7 +180,7 @@ h1   {color: black}
 	height: 400px;
 	padding: 4px;
 	margin-top: 1%;
-	margin-left: 8.33%;
+	margin-left: 8%;
 }
 
 .footer {
@@ -305,7 +302,6 @@ h1   {color: black}
     /** Unhide lightbox **/
     display: block;
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
 
 @media screen only (min-device-width : 768px) and (max-device-width : 950px){
 [class*="col-"] {

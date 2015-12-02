@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="./CSS/style_searchmenu.css">
-  <link rel="stylesheet" href="./CSS/slicknav.css">
-  <link rel="stylesheet" href="./CSS/style.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   <link rel="stylesheet" type="text/css" href="CSS/tipuesearch.css">
-  <title>History Travel</title>
+             <link rel="stylesheet" href="CSS/slidebars.css">
+           <!-- Slidebars Theme -->
+    <link rel="stylesheet" href="CSS/slidebars-theme.css">
+  <title>History Travel Contact</title>
 </head>
 <body>
   <header>
@@ -23,37 +23,66 @@
       </form></div>
     </div>
   </header>
-<div class="row">
-    <div class="col-12">
-      <nav id="menu-mobile">
-        <ul id="menu">
+<!-- Top Navigation Bar -->
+    <div class="sb-navbar sb-slide">
+    
+      <!-- Left Slidebar control -->
+      <div class="sb-toggle-left">
+      <div class="navicon-line"></div>
+        <div class="navicon-line"></div>
+        <div class="navicon-line"></div>
+      </div>
+      
+      
+      <!-- Menu Items -->
+      <ul class="sb-navbar-menu">
           <li><a href="index.html">Home</a></li>
-          
           <li><a href="#">Locations</a>
-          <ul>
+          
+        </li>
+        <li><a href="mostvisited.html">Most Visited</a>
+      </li>
+      <li><a href="#">7 Wonders of the World</a>
+    </li>
+    <li><a href="blog.html">Traveler's Blog</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  
+
+
+</div> 
+    <!-- Left Slidebar -->
+    <div class="sb-slidebar sb-left"> 
+      
+      <!-- Lists in Slidebars -->
+      <ul class="sb-menu">
+        <li><a href="index.html">Home</a></li>
+
+        
+        <!-- First Dropdown Menu -->
+        <li><a class="sb-toggle-submenu" href="#">Locations<span class="sb-caret"></span></a>
+          <ul class="sb-submenu">
             <li><a href="asia.html">Asia</a></li>
             <li><a href="europe.html">Europe</a></li>
             <li><a href="africa.html">Africa</a></li>
             <li><a href="northamerica.html">North America</a></li>
             <li><a href="southamerica.html">South America</a></li>
             <li><a href="#"> Central America </a></li>
+
           </ul>
         </li>
-        <li><a href="mostvisited.html">Most Visited</a>
-      </li>
-      <li><a href="#">Wonders of the World</a>
-      <ul>
-        <li><a href="#">Ancient</a></li>
-        <li><a href="#">Modern</a></li>
+        
+        <li><a href="mostvisited.html">Most Visited</a></li>
+        <li><a href="#">7 Wonders of the World</a></li>
+        <li><a href="blog.html">Traveler's Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
-    </li>
-    <li><a href="blog.html">Traveler's Blog</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</nav>
-</div>
-</div>
+      
+    </div><!-- /.sb-slidebar .sb-left -->
+
+<div id="sb-site">
 <div class="travelwrap contact">
 <h1>Contact Us </h1>
 <p>If you have any questions or comments please complete the form below or reach out to us via mail or telephone:</p>
@@ -159,6 +188,7 @@
     </footer>
 </div>
 </div>
+</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?v=3&amp;;sensor=false&amp;;key=AIzaSyDrEYVWmo--EyP0lVqGXP7kx0HHp85Kj9I&amp;callback=loadmap" defer></script>
 <script>
@@ -174,19 +204,22 @@ var map = new google.maps.Map(mapCanvas, mapOptions)
 google.maps.event.addDomListener(window, 'load', loadmap);
 </script>
 <script src="Scripts/js1.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="Scripts/jquery.slicknav.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-$('#menu').slicknav({
-prependTo:'#menu-mobile'
-});
-});
-</script>
 <script>
 $(document).ready(function() {
 $('#tipue_search_input').tipuesearch();
 });
 </script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="Scripts/slidebars.min.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+    </script>
+    <!-- Slidebars Theme JS
+       This should be included after you have initiated Slidebars. -->
+    <script src="Scripts/slidebars-theme.js"></script>
 </body>
 </html>
