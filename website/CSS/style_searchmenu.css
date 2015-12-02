@@ -45,17 +45,22 @@ html {
 a:link, a:visited {text-decoration: none; font-weight:bold;}
 nav{ 
     white-space: nowrap; 
+    height:50px;
+    z-index:30;
+    background:#FFF;
+    position:relative;
 }
-nav ul {padding:0; margin:0; list-style: none; background:#FFF; height:40px; z-index: 999; padding:10px;}
-nav ul li {display: inline-block; position:relative; font-size: 14px;}
-nav ul li a, ul li a:visited {display:inline-block; color:#000; width:168px; height:auto; line-height:20px; padding:10px; text-align:center;}
-nav ul li a:hover {display:block; color:#000; background:#FFF; line-height:20px; padding:10px;}
-nav ul li ul, ul li:hover ul li ul {display: none;}
-nav ul li:hover ul {display:block; position:absolute; top:36px; left:0; height:auto;}
-nav ul li:hover ul li a {display:block; text-align:left; border-bottom:1px solid #FFF;}
+nav ul {padding:0; margin:auto;  z-index: 999; padding: 10px;}
+nav ul li {display: inline-block; position:relative; list-style: none; font-size: 14px; width: 13%;}
+nav ul li a, ul li a:visited {display: inherit; color:#000; width:168px; height:auto; line-height:20px; padding:10px 10px; text-align:center;}
+nav ul li a:active {display:inline-block; color:#000; background:#FFF; line-height:20px; padding:10px;}
+nav ul li ul, ul li ul {display: none;}
+nav ul li:active ul {display:block; position:absolute; top:36px; left:0; height:auto;}
+nav ul li:active ul li a {display:block; text-align:left; border-bottom:1px solid #FFF;}
 
 nav ul li:hover ul li:hover ul {display:block; position:absolute; left:124px; top:0;}
 
+}
 .anchor ul{
 	margin-left: 4%;
 }
@@ -133,7 +138,8 @@ h1   {color: black}
  	margin-right: 25%;
  	}
 .team{
-	margin-left: 0;
+	width: 100%;
+
  }	
 .team div.item {
     /* To correctly align image, regardless of content height: */
@@ -143,16 +149,18 @@ h1   {color: black}
     text-align: center;
     /* The width of the container also implies margin around the images. */
     width: auto;
-    padding: 10px;
+
 }
 .team img {
     width: auto;
     height: auto;
-    padding: 10px;
+    padding-right: 20px;
+
 }
 .caption {
     /* Make the caption a block so it occupies its own line. */
     display: block;
+     padding-right: 20px;
 }
  .container-about{
  	background-color: rgb(245, 245, 245);
@@ -165,26 +173,6 @@ h1   {color: black}
  	margin-right: 25%;
  }
 
- }
- .aboutteam{
- 	background-color: rgb(245, 245, 245);
-	 vertical-align: top;
-	 margin: 0;
-	 text-align: center;
-	}
-	.aboutteam p{
-		margin-top: 10%;
-		vertical-align: top;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		padding-left: 50px;
-		padding-right: 20px;
-		
-	}
-.aboutteam img{
-	margin-right: 8%;
-	margin-left: 15%;
-}
  /*This is for the Contact Us page*/
 .contact{
  	margin-left: 25%;
@@ -331,11 +319,12 @@ h1   {color: black}
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
 
-}
-@media screen and (min-device-width : 768px) and (max-device-width : 1024px){
+@media screen only (min-device-width : 768px) and (max-device-width : 950px){
 [class*="col-"] {
   width: 100%;}
-
+  nav {
+  	height: auto;
+  }
 	.zoom-container {
 		width: 50%;
 		height: auto;
@@ -347,9 +336,7 @@ h1   {color: black}
 	.header{
 		font-size: auto;
 	}
-	nav ul li{
-		width:100%;
-	}
+
 }
 @media screen and (min-device-width : 320px) and (max-width: 480px) {
 	[class*="col-"] {
