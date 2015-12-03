@@ -229,6 +229,7 @@ h1   {color: black}
 	position: relative;
 	width: 100%;
 	margin-top: 1%;
+	text-align: center;
 
 }
 .footer .bottomnav{
@@ -242,7 +243,7 @@ h1   {color: black}
 }
 .footer li{
 	list-style-type: none;
-	text-align: left;
+	text-align: center;
 }
 /* ---------- Zoom container ---------- */
 .image-zoom-container {
@@ -383,9 +384,9 @@ h1   {color: black}
 
 
 /* SOCIAL ICONS - GENERAL */
-.social { list-style:none; margin:30px auto; width:464px; }
-.social li { display:inline; float:left; background-repeat:no-repeat; }
-.social li a { display:block; width:48px; height:48px; padding-right:10px; position:relative; text-decoration:none; }
+.social { list-style:none; text-align: center; width:50%; margin-left: 3%; padding-left: 400px;}
+.social li { display:inline-block; background-repeat:no-repeat; vertical-align:top; }
+.social li a { display:inline-block; width:48px; height:48px; padding-right:10px; position:relative; text-decoration:none; }
 .social li a strong { font-weight:normal; position:absolute; left:20px; top:-1px; color:#fff; padding:3px; z-index:9999;
  text-shadow:1px 1px 0 rgba(0, 0, 0, 0.75); background-color:rgba(0, 0, 0, 0.7);
  -moz-border-radius:3px; -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -webkit-border-radius:3px; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); border-radius:3px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);

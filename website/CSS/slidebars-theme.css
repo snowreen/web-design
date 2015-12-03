@@ -28,7 +28,7 @@
  */
 
 #sb-site {
-	padding: 65px 15px 15px 15px;
+	padding: 15px 15px 15px 15px;
 	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3); /* Casts a shadow onto the Slidebars from site. */
 }
 
