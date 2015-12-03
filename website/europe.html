@@ -1,214 +1,609 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="./CSS/style_searchmenu.css">
-	<link rel="stylesheet" href="./CSS/slicknav.css">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="CSS/tipuesearch.css">
 	<link rel="stylesheet" type="text/css" href="css/style_common.css">
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="CSS/slidebars.css">
+           <!-- Slidebars Theme -->
+    <link rel="stylesheet" href="CSS/slidebars-theme.css">
 	<title>Europe</title>
 </head>
 <body>
-	<header>
+		<header>
 		<div class="row">
-			<div class="col-10">
+			<div class="col-a">
 				<div id="superhead">
-					<img src="#" alt="Logo"><b>History Travel</b>
-					<h1 class="header">Ancient  | History | Travel | Food</h1>
+					<a href="index.html"><img src="Images/LOGO/logo1.png" alt="Logo"style= "width:118px; height:50px; margin: 7px 0 -2px 10px"></a>
 				</div>
 			</div>
-			<div class="col-2"><form action="search.html">
-<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+			<div class="col-b">
+					<h1 class="header">Ancient  | History | Travel | Food</h1>
+				</div>
+			<div class="col-2"><form id="search" action="search.html">
+<input type="text" name="q" id="tipue_search_input" placeholder="Search" autocomplete="off" required>
 </form></div>
 		</div>
 	</header>
-<div class="row">
-		<div class="col-12">
-			<nav id="menu-mobile">
-				<ul id="menu">
-					<li><a href="index.html">Home</a></li>
-					
-					<li><a href="#">Locations</a>
-					<ul>
-						<li><a href="asia.html">Asia</a></li>
-						<li><a href="europe.html">Europe</a></li>
-						<li><a href="africa.html">Africa</a></li>
-						<li><a href="northamerica.html">North America</a></li>
-						<li><a href="southamerica.html">South America</a></li>
-						<li><a href="#"> Central America </a></li>
-					</ul>
-				</li>
-				<li><a href="mostvisited.html">Most Visited</a>
-			</li>
-			<li><a href="#">Wonders of the World</a>
-			<ul>
-				<li><a href="#">Ancient</a></li>
-				<li><a href="#">Modern</a></li>
-			</ul>
-		</li>
-		<li><a href="blog.html">Traveler's Blog</a></li>
-		<li><a href="about.html">About Us</a></li>
-		<li><a href="contact.html">Contact Us</a></li>
-	</ul>
-</nav>
-</div>
-</div>
+	
+	<!-- Top Navigation Bar -->
+    <div class="sb-navbar sb-slide">
+    
+      <!-- Left Slidebar control -->
+      <div class="sb-toggle-left">
+      <div class="navicon-line"></div>
+        <div class="navicon-line"></div>
+        <div class="navicon-line"></div>
+      </div>
+      
+      
+      <!-- Menu Items -->
+      <ul class="sb-navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Locations</a>
+          
+        </li>
+        <li><a href="mostvisited.html">Most Visited</a>
+      </li>
+      <li><a href="#">7 Wonders of the World</a>
+    </li>
+    <li><a href="blog.html">Traveler's Blog</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  
 
+
+</div> 
+    <!-- Left Slidebar -->
+    <div class="sb-slidebar sb-left"> 
+      
+      <!-- Lists in Slidebars -->
+      <ul class="sb-menu">
+        <li><a href="index.html">Home</a></li>
+
+        
+        <!-- First Dropdown Menu -->
+        <li><a class="sb-toggle-submenu" href="#">Locations<span class="sb-caret"></span></a>
+          <ul class="sb-submenu">
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="northamerica.html">North America</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="#"> Central America </a></li>
+
+          </ul>
+        </li>
+        
+        <li><a href="mostvisited.html">Most Visited</a></li>
+        <li><a href="#">7 Wonders of the World</a></li>
+        <li><a href="blog.html">Traveler's Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      
+    </div><!-- /.sb-slidebar .sb-left -->
+
+<!-- Main body -->
 <h1>Europe</h1>
 <section class="photo">
+
+<div class="anchor">
+	<ul>
+<li><a href="#The Colosseum">The Colosseum</a></li>
+<li><a href="#Acropolis Of Athens">Acropolis Of Athens</a></li>
+<li><a href="#Leaning Tower of Pisa">Leaning Tower of Pisa</a></li>
+<li><a href="#Ephesus">Ephesus</a></li>
+<li><a href="#Stonehenge">Stonehenge</a></li>
+<li><a href="#Nemrut">Nemrut</a></li>
+</ul>
+</div>
+
 <div class="photos">
-<div class="view view-first">
-	<h2>The Colosseum</h2>
-	<img src="Images/europe/thecolloseum.jpg"  alt="http://bit.ly/1NJiBuP">
+	<a name="The Colosseum"></a>
+<h1>The Colosseum</h1>
+
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img1">
+		<img src="Images/europe/thecolloseum.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img1">
+		<img src="Images/europe/thecolloseum.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img2">
+		<img src="https://monetki.files.wordpress.com/2011/06/rome-colosseum_1.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img2">
+		<img src="https://monetki.files.wordpress.com/2011/06/rome-colosseum_1.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img3">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Coliseum-of-Rome.JPG" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img3">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Coliseum-of-Rome.JPG" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img4">
+		<img src="http://www.reidsitaly.com/images/lazio/rome/sights/colosseum-ext.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img4">
+		<img src="http://www.reidsitaly.com/images/lazio/rome/sights/colosseum-ext.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img5">
+		<img src="http://www.tvsd.org/sites/tvec/library/PublishingImages/Colosseum.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img5">
+		<img src="http://www.tvsd.org/sites/tvec/library/PublishingImages/Colosseum.jpg" width="550px" height="500px">
+	</a>
+	
+	<a href="#img6">
+		<img src="Images/europe/thecolloseum.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img6">
+		<img src="Images/europe/thecolloseum.jpg" width="550px" height="500px">
+	</a>
+	
+</ul>
+
+<div >
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">The Colosseum, Rome, Italy – An elliptical amphitheater in the center of the city of Rome, Italy. Built of concrete and stone, it was the largest amphitheater of the Roman Empire, and is considered one of the greatest works of Roman architecture and engineering. It is the largest amphitheater in the world and could hold between 50,000 and 80,000 spectators. Built in AD 70-80, it is an UNESCO World Heritage Site and one of the most famous structures in the world</p>
+	<div >
+		<p>The Colosseum, Rome, Italy – An elliptical amphitheater in the center of the city of Rome, Italy. Built of concrete and stone, it was the largest amphitheater of the Roman Empire, and is considered one of the greatest works of Roman architecture and engineering. It is the largest amphitheater in the world and could hold between 50,000 and 80,000 spectators. Built in AD 70-80, it is an UNESCO World Heritage Site and one of the most famous structures in the world</p>
 		<a href="http://www.history.com/topics/ancient-history/colosseum" target="_blank" class="info">Read More</a>
 	</div>
 	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+		
+		<a href="http://www.chinahighlights.com/beijing/restaurants.htm" target="_blank" class="info">Read More</a>
 	</div>
+	
+	
 </div>
+
 </div>
+
+
 </section>
-<br>
 <section class="photo">
-<div class="photos">
-<div class="view view-first">
-	<h2>Acropolis Of Athens</h2>
-	<img src="Images/europe/acropolisofathens.jpg" alt="http://10mosttoday.com/wp-content/uploads/2013/07/acropolis-1024x616.jpg">
-	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Acropolis Of Athens, Athens, Greece –Probably the most important Acropolis in Greece, the Acropolis of Athens is an ancient citadel located on a high rocky outcrop above the city of Athens. It contains the remains of the Parthenon and other ancient important structures.The Acropolis hill (acro - edge, polis - city), so called the "Sacred Rock" of Athens, is the most important site of the city and constitutes one of the most recognizable monuments of the world. It is the most significant reference point of ancient Greek culture, as well as the symbol of the city of Athens itself as it represent the apogee of artistic development in the 5th century BC. During Perikles' Golden Age, ancient Greek civilization was represented in an ideal way on the hill and some of the architectural masterpieces of the period were erected on its ground. </p>
-		<a href="http://www.greece-athens.com/place.php?place_id=1" target="_blank" class="info">Read More</a>
-	</div>
-	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
-	</div>
+
+<!-- <div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
+</div><div class="photos">
+<a name="Acropolis Of Athens"></a>
+<h2>Acropolis Of Athens</h2>
+<ul class="enlarge">
+<!-- thumbnail image wrapped in a link -->
+<a href="#img7">
+	<img src="http://no-limit.info/travel/services/wp-content/uploads/2014/11/Greece_Acropolis_temple.jpg"  width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img7">
+	<img src="http://no-limit.info/travel/services/wp-content/uploads/2014/11/Greece_Acropolis_temple.jpg" width="550px" height="500px">
+</a>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img8">
+	<img src="Images/europe/acropolisofathens.jpg" width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img8">
+	<img src="Images/europe/acropolisofathens.jpg" width="550px" height="500px">
+</a>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img9">
+	<img src="http://www.athensguide.com/erechthion-acropolis.jpg" width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img9">
+	<img src="http://www.athensguide.com/erechthion-acropolis.jpg" width="550px" height="500px">
+</a>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img10">
+	<img src="http://bbs.euyou.com/upload/20050225/1109315740.jpg"  width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img10">
+	<img src="http://bbs.euyou.com/upload/20050225/1109315740.jpg" width="550px" height="500px">
+</a>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img11">
+	<img src="http://arounddeglobe.com/wp-content/uploads/2014/09/Athens-Ruins-On-Acropolis.jpg" width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img11">
+	<img src="http://arounddeglobe.com/wp-content/uploads/2014/09/Athens-Ruins-On-Acropolis.jpg" width="550px" height="500px">
+</a>
+<a href="#img12">
+	<img src="http://no-limit.info/travel/services/wp-content/uploads/2014/11/Greece_Acropolis_temple.jpg"  width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img12">
+	<img src="http://no-limit.info/travel/services/wp-content/uploads/2014/11/Greece_Acropolis_temple.jpg" width="550px" height="500px">
+</a>
+
+</ul>
+
+<div >
+<h2>Description</h2>
+<div >
+	<p >TAcropolis Of Athens, Athens, Greece –Probably the most important Acropolis in Greece, the Acropolis of Athens is an ancient citadel located on a high rocky outcrop above the city of Athens. It contains the remains of the Parthenon and other ancient important structures.The Acropolis hill (acro - edge, polis - city), so called the "Sacred Rock" of Athens, is the most important site of the city and constitutes one of the most recognizable monuments of the world. It is the most significant reference point of ancient Greek culture, as well as the symbol of the city of Athens itself as it represent the apogee of artistic development in the 5th century BC. During Perikles' Golden Age, ancient Greek civilization was represented in an ideal way on the hill and some of the architectural masterpieces of the period were erected on its ground.</p>
+	<a href="http://www.greece-athens.com/place.php?place_id=1" target="_blank" class="info">Read More</a>
 </div>
+<h2>Food</h2>
+<div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+	<a href="https://www.nileguide.com/destination/beijing/best/restaurants-near/the-temple-of-heaven-788" target="_blank" class="info">Read More</a>
+	
 </div>
-</section>
-<br>
+
+</div>
+
+</div>
 <section class="photo">
+
+<!-- <div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
+
 <div class="photos">
-<div class="view view-first">
-	<h2>Leaning Tower of Pisa</h2>
-	<img src="Images/europe/leaningtowerpisa.jpg" alt="http://10mosttoday.com/wp-content/uploads/2013/07/pisa.jpg">
+	<a name="Leaning Tower of Pisa"></a>
+<h2>Leaning Tower of Pisa</h2>
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img13">
+		<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOnzBimN4Tk26psK2asz2oamdNgctitdUZW7Bcpj5DngIaRRKv"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img13">
+		<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOnzBimN4Tk26psK2asz2oamdNgctitdUZW7Bcpj5DngIaRRKv" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img14">
+		<img src="http://www.atravelbook.com/wp-content/uploads/2012/11/Leaning-Tower-of-Pisa.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img14">
+		<img src="http://www.atravelbook.com/wp-content/uploads/2012/11/Leaning-Tower-of-Pisa.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img15">
+		<img src="https://blog.udemy.com/wp-content/uploads/2014/04/bigstock-The-Leaning-Tower-Pisa-Italy-27275741-300x450.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img15">
+		<img src="https://blog.udemy.com/wp-content/uploads/2014/04/bigstock-The-Leaning-Tower-Pisa-Italy-27275741-300x450.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img16">
+		<img src="http://www.destination360.com/europe/italy/images/s/leaning-tower-of-pisa-facts.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img16">
+		<img src="http://www.destination360.com/europe/italy/images/s/leaning-tower-of-pisa-facts.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img17">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/A_Classical_View_of_Leaning_Tower_in_Pisa.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img17">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/A_Classical_View_of_Leaning_Tower_in_Pisa.jpg" width="550px" height="500px">
+	</a>
+	<a href="#img18">
+		<img src="http://www.atravelbook.com/wp-content/uploads/2012/11/Leaning-Tower-of-Pisa.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img18">
+		<img src="http://www.atravelbook.com/wp-content/uploads/2012/11/Leaning-Tower-of-Pisa.jpg" width="550px" height="500px">
+	</a>
+	
+</ul>
+<div>
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Leaning Tower of Pisa, Pisa, Italy – A bell tower known worldwide for its unintended tilt to one side. The tilt began during construction, caused by an inadequate foundation on ground too soft on one side. The construction began on 1173 and completed only in 1372. The tower’s height is 55 meters (183 ft). The learning tower of Pisa, known as Torre Pendente di Pisa in Italian, is different than most medieval architecture. This particular section won't cover the highly advanced construction techniques that were used, it is important to mention how this tower's design is significant.The Leaning Tower is the third oldest building on Pisa's Piazza del Duomo (cathedral square), the Cathedral and Baptistry were first.
-		</p>
+	<div>
+		<p>Leaning Tower of Pisa, Pisa, Italy – A bell tower known worldwide for its unintended tilt to one side. The tilt began during construction, caused by an inadequate foundation on ground too soft on one side. The construction began on 1173 and completed only in 1372. The tower’s height is 55 meters (183 ft). The learning tower of Pisa, known as Torre Pendente di Pisa in Italian, is different than most medieval architecture. This particular section won't cover the highly advanced construction techniques that were used, it is important to mention how this tower's design is significant.The Leaning Tower is the third oldest building on Pisa's Piazza del Duomo (cathedral square), the Cathedral and Baptistry were first.</p>
 		<a href="http://www.leaningtowerofpisa.net/history-tower-of-pisa.html" target="_blank" class="info">Read More</a>
 	</div>
 	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
+	<div>
+		<p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet. </p>
+		<a href="http://www.virtualtourist.com/travel/Asia/Cambodia/Khett_Siem_Reab/Angkor_Wat-1202517/Restaurants-Angkor_Wat-TG-C-1.html" target="_blank" class="info">Read More</a>
 	</div>
 </div>
 </div>
 </section>
-<br>
+<br/>
 <section class="photo">
+
+<!-- <div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
 <div class="photos">
-<div class="view view-first">
-	<h2>Ephesus</h2>
-	<img src="Images/europe/ephesus.jpg" alt="http://www.rsltours.com/pages/tur/images/ancient-city-ephesus.jpg">
+	<a name="Ephesus"></a>
+<h2>Ephesus</h2>
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img19">
+		<img src="http://www.wingsofeaglesct.com/REVELATION/REV_IMAGES/ephesus_library.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img19">
+		<img src="http://www.wingsofeaglesct.com/REVELATION/REV_IMAGES/ephesus_library.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img20">
+		<img src="http://www.turkeyholidays2015.com/wp-content/uploads/2014/12/temple-of-hadrian-ephesus.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img20">
+		<img src="http://www.turkeyholidays2015.com/wp-content/uploads/2014/12/temple-of-hadrian-ephesus.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img21">
+		<img src="http://happiness-wave.com/wp-content/uploads/2015/09/ephesus.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img21">
+		<img src="http://happiness-wave.com/wp-content/uploads/2015/09/ephesus.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img22">
+		<img src="http://www.ephesustours.biz/live/upload/1252395395_ephesus_5.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img22">
+		<img src="http://www.ephesustours.biz/live/upload/1252395395_ephesus_5.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img23">
+		<img src="http://pennstatermag.files.wordpress.com/2011/05/dsc_7683_med_library_at_ephesus.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img23">
+		<img src="http://pennstatermag.files.wordpress.com/2011/05/dsc_7683_med_library_at_ephesus.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img24">
+		<img src="http://happiness-wave.com/wp-content/uploads/2015/09/ephesus.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img24">
+		<img src= "http://happiness-wave.com/wp-content/uploads/2015/09/ephesus.jpg" width="550px" height="500px">
+	</a>
+</ul>
+<div>
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Ephesus, Turkey - Ephesus which was established as a port, was used to be the most important commercial centre. It played a great role in the ancient times with its strategic location. Ephesus is located on a very fertile valley.Ephesus, once, the trade centre of the ancient world, a religious centre of the early Christianity and today, Ephesus is an important tourism centre in Turkey.The ancient city Ephesus is located in Selcuk, a small town 30km away from Kusadasi. </p>
-		<a href="http://www.ephesus.us" target="_blank" class="info">Read More</a>
+	<div >
+		<p >Lying at the city center and called Gu Gong in Chinese, it was the imperial palace for twenty-four emperors during the Ming and Qing dynasties. It was first built throughout 14 years during the reign of Emperor Chengzu  in the Ming Dynasty (1368-1644).
+			Ancient Chinese Astronomers believed that the Purple Star (Polaris) was in the center of heaven and the Heavenly Emperor lived in the Purple Palace.
+		The Palace for the emperor on earth was so called the Purple City. It was forbidden to enter without special permission of the empeor. Hence its name 'The Purple Forbidden City', usually 'The Forbidden City'</p>
+		<a href="http://www.travelchinaguide.com/cityguides/beijing/forbidden.htm" target="_blank"class="info">Read More</a>
 	</div>
 	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
+	<div>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+		<a href="http://www.mygola.com/forbidden-city-imperial-palace-p41052/nearby-restaurants" target="_blank" class="info">Read More</a>
 	</div>
 </div>
 </div>
 </section>
-<br>
+<br/>
 <section class="photo">
+<!-- <div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
 <div class="photos">
-<div class="view view-first">
-	<h2>Stonehenge</h2>
-	<img src="Images/europe/stonehenge.jpg" alt="http://36.media.tumblr.com/tumblr_lt9wzxPdLJ1r0yez1o1_1280.jpg">
+	<a name="Stonehenge"></a>
+
+<h2>Stonehenge</h2>
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img25">
+		<img src="http://laplacamadre.files.wordpress.com/2014/02/stonehenge-cotswolds_post-152.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img25">
+		<img src="http://laplacamadre.files.wordpress.com/2014/02/stonehenge-cotswolds_post-152.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img26">
+		<img src="http://www.londonforfree.net/gizmo/wp-content/uploads/2015/02/stonehenge2.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img26">
+		<img src="http://www.londonforfree.net/gizmo/wp-content/uploads/2015/02/stonehenge2.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img27">
+		<img src="https://i.ytimg.com/vi/atNXY9PiwkE/maxresdefault.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img27">
+		<img src="https://i.ytimg.com/vi/atNXY9PiwkE/maxresdefault.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img28">
+		<img src="http://d9e1a3e4cf046f17aa52-abd76f89d11702d9e2f53ed0fc943ea2.r90.cf1.rackcdn.com/46/2/large.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img28">
+		<img src="http://d9e1a3e4cf046f17aa52-abd76f89d11702d9e2f53ed0fc943ea2.r90.cf1.rackcdn.com/46/2/large.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img29">
+		<img src="http://ipad.wallpaperswiki.com/wp-content/uploads/2012/10/Stonehenge.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img29">
+		<img src="http://ipad.wallpaperswiki.com/wp-content/uploads/2012/10/Stonehenge.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img30">
+		<img src="http://laplacamadre.files.wordpress.com/2014/02/stonehenge-cotswolds_post-152.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img30">
+		<img src= "http://laplacamadre.files.wordpress.com/2014/02/stonehenge-cotswolds_post-152.jpg" width="550px" height="500px">
+	</a>
+</ul>
+
+
+<div >
+	
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Stonehenge, England - Stonehenge is a massive stone monument located on a chalky plain north of the modern-day city of Salisbury, England. Research shows that the site has continuously evolved over a period of about 10,000 years. The structure that we call “Stonehenge” was built between roughly 5,000 and 4,000 years ago and that forms just one part of a larger, and highly complex, sacred landscape. The biggest of Stonehenge’s stones, known as sarsens, are up to 30 feet (9 meters) tall and weigh 25 tons (22.6 metric tons) on average. It is widely believed that they were brought from Marlborough Downs, a distance of 20 miles (32 kilometers) to the north.  </p>
-		<a href="http://www.livescience.com/22427-stonehenge-facts.html" target="_blank"  class="info">Read More</a>
+	<div >
+		<p>Taj Mahal is regarded as one of the eight wonders of the world, and some Western historians have noted that its architectural beauty has never been surpassed.
+			The Taj is the most beautiful monument built by the Mughals, the Muslim rulers of India. Taj Mahal is built entirely of white marble. Its stunning architectural beauty is beyond adequate description, particularly at dawn and sunset.
+			The Taj seems to glow in the light of the full moon. On a foggy morning, the visitors experience the Taj as if suspended when viewed from across the Jamuna river.
+			Taj Mahal was built by a Muslim, Emperor Shah Jahan (died 1666 C.E.) in the memory of his dear wife and queen Mumtaz Mahal at Agra, India. It is an "elegy in marble" or some say an expression of a "dream."
+		Taj Mahal (meaning Crown Palace) is a Mausoleum that houses the grave of queen Mumtaz Mahal at the lower chamber.</p>
+		<a href="#" target="_blank" class="info">Read More</a>
 	</div>
 	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
+	<div >
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+		<a href="http://theculturetrip.com/asia/india/articles/agra-s-top-10-restaurants-eating-out-in-uttar-pradesh/" target="_blank" class="info">Read More</a>
 	</div>
 </div>
 </div>
 </section>
-<br>
+<br/>
 <section class="photo">
+
+<!-- 
+<div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
+
 <div class="photos">
-<div class="view view-first">
-	<h2>Nemrut</h2>
-	<img src="Images/europe/nemrut.jpg" alt="http://10mosttoday.com/wp-content/uploads/2013/07/acropolis-1024x616.jpg">
+	<a name="Nemrut"></a>
+<h2>Nemrut</h2>
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img31">
+		<img src="http://www.gulser.com.tr/images/tur/31_3069.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img31">
+		<img src="http://www.gulser.com.tr/images/tur/31_3069.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img32">
+		<img src="http://whc.unesco.org/uploads/thumbs/site_0448_0010-594-0-20140708162215.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img32">
+		<img src="http://whc.unesco.org/uploads/thumbs/site_0448_0010-594-0-20140708162215.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img33">
+		<img src="http://www.goturkey.com/uploads/add01740cb7034c972643e6360ab2128.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img33">
+		<img src="http://www.goturkey.com/uploads/add01740cb7034c972643e6360ab2128.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img34">
+		<img src="http://www.turkeytour.net/images/kategori/anatolian-tours/istanbul-cappadocia-nemrut-tour-package/istanbul-cappadocia-nemrut-tour-package-1.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img34">
+		<img src="http://www.turkeytour.net/images/kategori/anatolian-tours/istanbul-cappadocia-nemrut-tour-package/istanbul-cappadocia-nemrut-tour-package-1.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img35">
+		<img src="http://www.nerededir.com/resim/nemrutdagi1.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img35">
+		<img src="http://www.nerededir.com/resim/nemrutdagi1.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img36">
+		<img src="http://www.destoop.com/trip/3%20DAYBYDAY/011212%20Ankara/Nemrut01.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img36">
+		<img src= "http://www.destoop.com/trip/3%20DAYBYDAY/011212%20Ankara/Nemrut01.jpg" width="550px" height="500px">
+	</a>
+</ul>
+
+<div>
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Nemrut, Turkey - Nemrut is the site of the eminently impressive first century BC mountain-top tomb of King Antiochus I Epiphanes.Also known as or Nemrud or as Mount Nemrut (Nemrut Dağı in Turkish), the site is famed for its 10-metre-high statues depicting various heads, both mythical and real in nature.Antiochus may have been descended from Darius the Great and Alexander the Great, but his own Commagene kingdom is far less well known. Indeed, the grandeur of Nemrut has proved such a draw over the years that this UNESCO-listed site is often credited with putting his realm on the map.Today, Nemrut is usually visited at sunrise or sunset, the times considered best for admiring its still-life population.
-		</p>
-		<a href="http://www.greece-athens.com/place.php?place_id=1" target="_blank" class="info">Read More</a>
+	<div >
+		<p>Jokhang means 'House of Buddha'. Located in the center of old Lhasa city, Jokhang Monastery is the prime seat of the Gelugpa (Yellow) Branch of Tibetan Buddhism.
+			It was originally built in 647 AD. Jokhang Temple is the spiritual center of Tibet and the holiest destination for all Tibetan Buddhist pilgrims.
+		Through night and day, there are lots of pilgrims kowtowing in front of Jokhang Temple.</p>
+		<a href="https://sacredsites.com/asia/tibet/jokhang_temple.html"  target="_blank" class="info">Read More</a>
 	</div>
 	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+		<a href="http://www.chinahighlights.com/lhasa/food-restaurant.htm"  target="_blank" class="info">Read More</a>
 	</div>
 </div>
 </div>
 </section>
 
+<p id="back-top">
+<a href="#top"><span></span>Go Top</a>
+</p>
+</div>
 <div class="row">
 <div class="col-12">
 	<footer class="footer">
@@ -217,7 +612,7 @@
 				<h4>Navigation</h4>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="#">Gallery</a></li>
 					<li><a href="blog.html">Traveler's Blog</a></li>
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
@@ -260,24 +655,106 @@
 				<p>1-800-Travel1(8728351)</p> <a href="http://www.luc.edu">www.luc.edu</a>
 			</div>
 		</div>
-	</footer>
-</div>
-</div>
+	
 
+<div>
+		
+		<div >
+		
+		<!-- Social Media Buttons - CSS3 -->
+		<ul class="social" id="css3">
+		
+			<li class="instragram">
+				<a href="https://www.instagram.com/" target="_blank" class="info"><strong>Instragram</strong></a>
+			</li>
+			<li class="pinterest">
+				<a href="https://www.pinterest.com/" target="_blank" class="info"><strong>Pinterest</strong></a>
+			</li>
+			<li class="facebook">
+				<a href="http://www.facebook.com/" target="_blank" class="info"><strong>Facebook</strong></a>
+			</li>
+			<li class="flickr">
+				<a href="http://www.flickr.com/" target="_blank" class="info"><strong>Flickr</strong></a>
+			</li>
+			<li class="rss">
+				<a href="http://feeds2.feedburner.com/marcofolio" target="_blank" class="info"><strong>RSS</strong></a>
+			</li>
+			<li class="twitter">
+				<a href="http://twitter.com/" target="_blank" class="info"><strong>Twitter</strong></a>
+			</li>
+		</ul>
+		
+	</div>
+
+		</div>
+
+		</footer>
+</div>
+</div>
+</div>
 <script src="Scripts/js1.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="Scripts/jquery.slicknav.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#menu').slicknav({
-prependTo:'#menu-mobile'
-});
-});
-</script>
+<script type="text/javascript" src="Scripts/tipuesearch.js"></script>
+<script type="text/javascript" src="Scripts/tipuesearch_set.js"></script>
+<script type="text/javascript" src="Scripts/tipuesearch_content.js"></script>
 <script>
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch();
 });
 </script>
+<script>
+		$(function() {
+
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() {
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+
+		});
+	</script>
+	<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="Scripts/slidebars.min.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+    </script>
+    <!-- Slidebars Theme JS
+       This should be included after you have initiated Slidebars. -->
+    <script src="Scripts/slidebars-theme.js"></script>
 </body>
 </html>

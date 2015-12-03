@@ -1,184 +1,494 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="./CSS/style_searchmenu.css">
-	<link rel="stylesheet" href="./CSS/slicknav.css">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="CSS/tipuesearch.css">
 	<link rel="stylesheet" type="text/css" href="css/style_common.css">
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
-	<title>Europe</title>
+	<link rel="stylesheet" href="CSS/slidebars.css">
+           <!-- Slidebars Theme -->
+    <link rel="stylesheet" href="CSS/slidebars-theme.css">
+	<title>SouthAmerica</title>
 </head>
 <body>
-	<header>
+		<header>
 		<div class="row">
-			<div class="col-10">
+			<div class="col-a">
 				<div id="superhead">
-					<img src="#" alt="Logo"><b>History Travel</b>
-					<h1 class="header">Ancient  | History | Travel | Food</h1>
+					<a href="index.html"><img src="Images/LOGO/logo1.png" alt="Logo"style= "width:118px; height:50px; margin: 7px 0 -2px 10px"></a>
 				</div>
 			</div>
-			<div class="col-2"><form action="search.html">
-				<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
-			</form></div>
+			<div class="col-b">
+					<h1 class="header">Ancient  | History | Travel | Food</h1>
+				</div>
+			<div class="col-2"><form id="search" action="search.html">
+<input type="text" name="q" id="tipue_search_input" placeholder="Search" autocomplete="off" required>
+</form></div>
 		</div>
 	</header>
-	<div class="row">
-		<div class="col-12">
-			<nav id="menu-mobile">
-				<ul id="menu">
-					<li><a href="index.html">Home</a></li>
-					
-					<li><a href="#">Locations</a>
-					<ul>
-						<li><a href="asia.html">Asia</a></li>
-						<li><a href="europe.html">Europe</a></li>
-						<li><a href="africa.html">Africa</a></li>
-						<li><a href="northamerica.html">North America</a></li>
-						<li><a href="southamerica.html">South America</a></li>
-						<li><a href="#"> Central America </a></li>
-					</ul>
-				</li>
-				<li><a href="mostvisited.html">Most Visited</a>
-			</li>
-			<li><a href="#">Wonders of the World</a>
-			<ul>
-				<li><a href="#">Ancient</a></li>
-				<li><a href="#">Modern</a></li>
-			</ul>
-		</li>
-		<li><a href="blog.html">Traveler's Blog</a></li>
-		<li><a href="about.html">About Us</a></li>
-		<li><a href="contact.html">Contact Us</a></li>
-	</ul>
-</nav>
-</div>
-</div>
+	
+	<!-- Top Navigation Bar -->
+    <div class="sb-navbar sb-slide">
+    
+      <!-- Left Slidebar control -->
+      <div class="sb-toggle-left">
+      <div class="navicon-line"></div>
+        <div class="navicon-line"></div>
+        <div class="navicon-line"></div>
+      </div>
+      
+      
+      <!-- Menu Items -->
+      <ul class="sb-navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Locations</a>
+          
+        </li>
+        <li><a href="mostvisited.html">Most Visited</a>
+      </li>
+      <li><a href="#">7 Wonders of the World</a>
+    </li>
+    <li><a href="blog.html">Traveler's Blog</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  
+
+
+</div> 
+    <!-- Left Slidebar -->
+    <div class="sb-slidebar sb-left"> 
+      
+      <!-- Lists in Slidebars -->
+      <ul class="sb-menu">
+        <li><a href="index.html">Home</a></li>
+
+        
+        <!-- First Dropdown Menu -->
+        <li><a class="sb-toggle-submenu" href="#">Locations<span class="sb-caret"></span></a>
+          <ul class="sb-submenu">
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="northamerica.html">North America</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="#"> Central America </a></li>
+
+          </ul>
+        </li>
+        
+        <li><a href="mostvisited.html">Most Visited</a></li>
+        <li><a href="#">7 Wonders of the World</a></li>
+        <li><a href="blog.html">Traveler's Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      
+    </div><!-- /.sb-slidebar .sb-left -->
+
+<!-- Main body -->
 <h1>South America</h1>
 <section class="photo">
+
+<div class="anchor">
+	<ul>
+<li><a href="#Nazca">Nazca</a></li>
+<li><a href="#Tiwanacu and Puma Punku">Tiwanacu and Puma Punku</a></li>
+<li><a href="#Machu Picchu">Machu Picchu</a></li>
+<li><a href="#Easter Island">Easter Island</a></li>
+<li><a href="#Chan Chan">Chan Chan</a></li>
+</ul>
+</div>
+
 <div class="photos">
-<div class="view view-first">
-	<h2>Nazca</h2>
-	<img src="Images/southamerica/nazca.jpg" alt="http://www.redicecreations.com/ul_img/24592nazca_bird.jpg">
+	<a name="Nazca "></a>
+<h1>Nazca</h1>
+
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img1">
+		<img src="http://2.bp.blogspot.com/-Ygk4kbks3cU/UMFTmSnbtAI/AAAAAAAAAiM/BPcv43k1rSg/s1600/las-manos-nasca.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img1">
+		<img src="http://2.bp.blogspot.com/-Ygk4kbks3cU/UMFTmSnbtAI/AAAAAAAAAiM/BPcv43k1rSg/s1600/las-manos-nasca.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img2">
+		<img src="http://www.latinamericanstudies.org/nazca/nazca-lines1.gif" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img2">
+		<img src="http://www.latinamericanstudies.org/nazca/nazca-lines1.gif" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img3">
+		<img src="http://www.raisingmiro.com/wp-content/uploads/2012/01/nazca1.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img3">
+		<img src="http://www.raisingmiro.com/wp-content/uploads/2012/01/nazca1.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img4">
+		<img src="https://c2.staticflickr.com/6/5479/10182976533_0d58c1d13c_b.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img4">
+		<img src="https://c2.staticflickr.com/6/5479/10182976533_0d58c1d13c_b.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img5">
+		<img src="http://ancientufo.org/site/wp-content/uploads/2015/02/the-astronaut.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img5">
+		<img src="http://ancientufo.org/site/wp-content/uploads/2015/02/the-astronaut.jpg" width="550px" height="500px">
+	</a>
+	
+	<a href="#img6">
+		<img src="http://beforeitsnews.com/mediadrop/uploads/2014/11/529b4177f9977c89f92a3c2ece6912c2a9a44b6c.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img6">
+		<img src="http://beforeitsnews.com/mediadrop/uploads/2014/11/529b4177f9977c89f92a3c2ece6912c2a9a44b6c.jpg" width="550px" height="500px">
+	</a>
+	
+</ul>
+
+<div >
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Nazca, Peru - n the Peruvian Desert, about 200 miles south of Lima, there lies a plain between the Inca and Nazca (sometimes also spelled Nasca) Valleys. Across this plain, in an area measuring 37 miles long and 1-mile wide, is an assortment of perfectly-straight lines, many running parallel, others intersecting, forming a grand geometric form. In and around the lines there are also trapezoidal zones, strange symbols, and pictures of birds and beasts all etched on a giant scale that can only be appreciated from the sky.
-		</p>
+	<div >
+		<p>Nazca, Peru - n the Peruvian Desert, about 200 miles south of Lima, there lies a plain between the Inca and Nazca (sometimes also spelled Nasca) Valleys. Across this plain, in an area measuring 37 miles long and 1-mile wide, is an assortment of perfectly-straight lines, many running parallel, others intersecting, forming a grand geometric form. In and around the lines there are also trapezoidal zones, strange symbols, and pictures of birds and beasts all etched on a giant scale that can only be appreciated from the sky.</p>
 		<a href="http://ngm.nationalgeographic.com/2010/03/nasca/hall-text/2" target="_blank" class="info">Read More</a>
 	</div>
-	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
-	</div>
+	<!-- <h2>Food</h2>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+		
+		<a href="http://www.chinahighlights.com/beijing/restaurants.htm" target="_blank" class="info">Read More</a>
+	</div> -->
+	
+	
 </div>
+
 </div>
+
+
 </section>
 <section class="photo">
+
+<!-- <div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
+</div><div class="photos">
+<a name="Tiwanaku and Puma Punku"></a>
+<h2>Tiwanacu and Puma Punku</h2>
+<ul class="enlarge">
+<!-- thumbnail image wrapped in a link -->
+<a href="#img7">
+	<img src="http://www.think-aboutit.com/wp-content/uploads/2012/09/puma-punku-tiwanaku-wall.jpg"  width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img7">
+	<img src="http://www.think-aboutit.com/wp-content/uploads/2012/09/puma-punku-tiwanaku-wall.jpg" width="550px" height="500px">
+</a>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img8">
+	<img src="http://www.think-aboutit.com/wp-content/uploads/2012/09/puma-punku-gate-of-cougar.jpg" width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img8">
+	<img src="http://www.think-aboutit.com/wp-content/uploads/2012/09/puma-punku-gate-of-cougar.jpg" width="550px" height="500px">
+</a>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img9">
+	<img src="http://www.crystalinks.com/tiwanakuwall.jpg" width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img9">
+	<img src="http://www.crystalinks.com/tiwanakuwall.jpg" width="550px" height="500px">
+</a>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img10">
+	<img src="https://badarchaeology.files.wordpress.com/2014/01/templete_heads_tiwanaku.jpg"  width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img10">
+	<img src="https://badarchaeology.files.wordpress.com/2014/01/templete_heads_tiwanaku.jpg" width="550px" height="500px">
+</a>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img11">
+	<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvE9YaIsDTK3AKgk2mB0K7uJGCzFjEk6F8iEEiVI8RSo7WArVi" width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img11">
+	<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvE9YaIsDTK3AKgk2mB0K7uJGCzFjEk6F8iEEiVI8RSo7WArVi" width="550px" height="500px">
+</a>
+<a href="#img12">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGZph6JEVxrJ73tW5v_mkNMUPOVUTNmwICf79d31PYVGLGRJd_w"  width="200px" height="200px">
+</a>
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img12">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGZph6JEVxrJ73tW5v_mkNMUPOVUTNmwICf79d31PYVGLGRJd_w" width="550px" height="500px">
+</a>
+
+</ul>
+
+<div >
+<h2>Description</h2>
+<div >
+	<p >Tiwanacu and Puma Punku, Bolivia - Tiwanaku (Spanish: Tiahuanaco and Tiahuanacu) is an important Pre-Columbian archaeological site in western Bolivia, South America. Pumapunku also called “Puma Pumku” or “Puma Puncu”, is part of a large temple complex or monument group that is part of the Tiwanaku. Tiahuanaco is an example of engineering so monumental that it dwarfs even the work of the Aztecs. Stone blocks on the site weigh many tons. They bear no chisel marks, so the means by which they were shaped remains a mystery. The stone itself came from two different quarries. One supplied sandstone and was situated 10 miles away. It shows signs of having produced blocks weighing up to 400 tons. The other supplied andesite and was located 50 miles away, raising the question of how the enormous blocks were transported in an age before the horse was domesticated in South America. Close examination of the structures shows an unusual technique behind their building. The stone blocks were notched, then fitted together so that they interlocked in three dimensions. The result was buildings strong enough to withstand earthquakes.</p>
+	<a href="http://www.ancient-code.com/12-facts-about-puma-punku" target="_blank" class="info">Read More</a>
+</div>
+<!-- <h2>Food</h2>
+<div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+	<a href="https://www.nileguide.com/destination/beijing/best/restaurants-near/the-temple-of-heaven-788" target="_blank" class="info">Read More</a>
+	
+</div> -->
+
+</div>
+
+</div>
+
+<section class="photo">
+
+<!-- <div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
+
 <div class="photos">
-<div class="view view-first">
-	<h2>Tiwanacu and Puma Punku </h2>
-	<img src="Images/southamerica/tiwanakuandpumapunku.jpg" alt="http://media-cdn.tripadvisor.com/media/photo-s/04/44/8e/6a/tiwanaku.jpg">
+	<a name="Machu Picchu"></a>
+<h2>Machu Picchu</h2>
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img13">
+		<img src="http://media-cdn.tripadvisor.com/media/photo-s/01/41/ef/04/winawayna.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img13">
+		<img src="http://media-cdn.tripadvisor.com/media/photo-s/01/41/ef/04/winawayna.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img14">
+		<img src="http://kellygrainger.files.wordpress.com/2010/02/machu-picchu-peru.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img14">
+		<img src="http://kellygrainger.files.wordpress.com/2010/02/machu-picchu-peru.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img15">
+		<img src="http://www.inkas.com/tours/jpg_files/jpg_photos/cuzco_machu_picchu/santillan_photos/MACHU%20PICCHU%202-0811.JPG" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img15">
+		<img src="http://www.inkas.com/tours/jpg_files/jpg_photos/cuzco_machu_picchu/santillan_photos/MACHU%20PICCHU%202-0811.JPG" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img16">
+		<img src="http://www.go2peru.com/destinos/large/P1020287.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img16">
+		<img src="http://www.go2peru.com/destinos/large/P1020287.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img17">
+		<img src="http://activetraveltours.com/wp-content/uploads/2012/04/Machu-Picchu2.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img17">
+		<img src="http://activetraveltours.com/wp-content/uploads/2012/04/Machu-Picchu2.jpg" width="550px" height="500px">
+	</a>
+	
+</ul>
+<div>
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Tiwanacu and Puma Punku, Bolivia - Tiwanaku (Spanish: Tiahuanaco and Tiahuanacu) is an important Pre-Columbian archaeological site in western Bolivia, South America. Pumapunku also called “Puma Pumku” or “Puma Puncu”, is part of a large temple complex or monument group that is part of the Tiwanaku.   Tiahuanaco is an example of engineering so monumental that it dwarfs even the work of the Aztecs. Stone blocks on the site weigh many tons. They bear no chisel marks, so the means by which they were shaped remains a mystery. The stone itself came from two different quarries. One supplied sandstone and was situated 10 miles away. It shows signs of having produced blocks weighing up to 400 tons. The other supplied andesite and was located 50 miles away, raising the question of how the enormous blocks were transported in an age before the horse was domesticated in South America. Close examination of the structures shows an unusual technique behind their building. The stone blocks were notched, then fitted together so that they interlocked in three dimensions. The result was buildings strong enough to withstand earthquakes.</p>
-		<a href="http://www.ancient-code.com/12-facts-about-puma-punku" target="_blank" class="info">Read More</a>
+	<div>
+		<p>Machu Picchu, Peru - Machu Picchu, The Lost city of the Incas, is a mystical, sacred place. Touched by the clouds, the ruins are one of the most enigmatic and beautiful ancient ruins in the world. Rediscovered on July 24, 1911 by Yale archaeologist Hiram Bingham, Machu Picchu (meaning 'Old Peak' in Quechua, the language spoken by the Incas) was thought to be a sanctuary for the preparation of priestesses and brides for the Inca nobility. The dramatic setting in a remote area of the Peruvian Andes enhances the shroud of mystery even more. The ruins lie near the city Cuzco in Southeastern Peru. An absolute wonder of human heritage, Machu Picchu will touch your heart and soul in many ways. Highly recommended!</p>
+		<a href="hhttp://www.history.com/topics/machu-picchu" target="_blank" class="info">Read More</a>
 	</div>
-	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
-	</div>
+	<!-- <h2>Food</h2>
+	<div>
+		<p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet. </p>
+		<a href="http://www.virtualtourist.com/travel/Asia/Cambodia/Khett_Siem_Reab/Angkor_Wat-1202517/Restaurants-Angkor_Wat-TG-C-1.html" target="_blank" class="info">Read More</a>
+	</div> -->
 </div>
 </div>
 </section>
 <br/>
 <section class="photo">
+
+<!-- <div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
 <div class="photos">
-<div class="view view-first">
-	<h2>Machu Picchu</h2>
-	<img src="Images/southamerica/machupicchu.jpg" alt="http://images.nationalgeographic.com/wpf/media-live/photos/000/247/cache/lost-city-machu-picchu-citadel_24713_600x450.jpg">
+	<a name="Easter Island"></a>
+<h2>Easter Island</h2>
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img19">
+		<img src="http://chileescape.com/wp-content/uploads/126512743.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img19">
+		<img src="http://chileescape.com/wp-content/uploads/126512743.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img20">
+		<img src="https://worldexpeditions.s3-ap-southeast-2.amazonaws.com/South-America/Chile/Moai-statues-on-Easter-Island-in-Chile-71574-5.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img20">
+		<img src="https://worldexpeditions.s3-ap-southeast-2.amazonaws.com/South-America/Chile/Moai-statues-on-Easter-Island-in-Chile-71574-5.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img21">
+		<img src="http://www.fodors.com/images/experiences/Easter_island_slide.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img21">
+		<img src="http://www.fodors.com/images/experiences/Easter_island_slide.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img22">
+		<img src="http://www.losapos.com/pics/17/easterisland04.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img22">
+		<img src="http://www.losapos.com/pics/17/easterisland04.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img23">
+		<img src="http://www.planetstillalive.com/wp-content/uploads/2013/05/Moa%C3%AF-easter-Island-1024x680.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img23">
+		<img src="http://www.planetstillalive.com/wp-content/uploads/2013/05/Moa%C3%AF-easter-Island-1024x680.jpg" width="550px" height="500px">
+	</a>
+</ul>
+<div>
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Machu Picchu, Peru - Machu Picchu, The Lost city of the Incas, is a mystical, sacred place. Touched by the clouds, the ruins are one of the most enigmatic and beautiful ancient ruins in the world. Rediscovered on July 24, 1911 by Yale archaeologist Hiram Bingham, Machu Picchu (meaning 'Old Peak' in Quechua, the language spoken by the Incas) was thought to be a sanctuary for the preparation of priestesses and brides for the Inca nobility. The dramatic setting in a remote area of the Peruvian Andes enhances the shroud of mystery even more. The ruins lie near the city Cuzco in Southeastern Peru. An absolute wonder of human heritage, Machu Picchu will touch your heart and soul in many ways. Highly recommended!
-		</p>
-		<a href="hhttp://www.history.com/topics/machu-picchu" target="_blank" class="info">Read More</a>
+	<div >
+		<p >Easter Island, Chile- Lying just south of the tropic of Capricorn, midway between Chile and Tahiti, Easter Island – or Rapa Nui – is one of the most remote islands on earth. Triangular in shape, with an extinct volcano at each corner, its 170 square kilometres offer a varied landscape of gently rolling hills, volcanic craters, rugged lava fields, and steep ocean cliffs, surrounded by the deep-blue waters of the South Pacific. The island is famous above all for nearly a thousand gigantic long-eared stone statues or moai, most of them 4 to 8 metres tall, and for over 300 stone platforms or ahu, many of megalithic proportions. It is a land of mystery, known in former times as Te Pito o te Henua, ‘the navel of the world’.'</p>
+		<a href="http://davidpratt.info/easter1.htm" target="_blank"class="info">Read More</a>
 	</div>
-	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
-	</div>
+	<!-- <h2>Food</h2>
+	<div>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+		<a href="http://www.mygola.com/forbidden-city-imperial-palace-p41052/nearby-restaurants" target="_blank" class="info">Read More</a>
+	</div> -->
 </div>
 </div>
 </section>
+<br/>
 <section class="photo">
+<!-- <div class="anchor">
+	<ul>
+<li><a href="#Great Wall">[Great Wall] </a></li>
+<li><a href="#TempleofHeaven">[Temple of Haven] </a></li>
+<li><a href="#Temples of Angkor Thom and Angkor Wat">[Temples of Angkor Thom and Angkor Wat]</a></li>
+<li><a href="#Forbidden City">[Forbidden City]</a></li>
+<li><a href="#Taj Mahal">Taj Mahal </a></li>
+<li><a href="#Jokhang Temple">Jokhang Temple</a></li>
+<li><a href="#Grand Palace">Grand Palace</a></li>
+</ul>
+</div> -->
 <div class="photos">
-<div class="view view-first">
-	<h2>Easter Island</h2>
-	<img src="Images/southamerica/easterisland.jpg" alt="http://www.mylifelist.org/_images/userfiles/8210/experience/11576/easter_island_pictures5.jpg">
+	<a name="Chan Chan"></a>
+
+<h2>Chan Chan</h2>
+<ul class="enlarge">
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img25">
+		<img src="http://arounddeglobe.com/wp-content/uploads/2015/06/Chan-Chan.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img25">
+		<img src="http://arounddeglobe.com/wp-content/uploads/2015/06/Chan-Chan.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img26">
+		<img src="http://planedia.com/blog/wp-content/uploads/2014/07/chanchan2.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img26">
+		<img src="http://planedia.com/blog/wp-content/uploads/2014/07/chanchan2.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img27">
+		<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzhz6uY5ZmCP109Xo0Gyrp2uiFaJ_wBnyYPKHQxbumCnV69eBFFg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img27">
+		<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzhz6uY5ZmCP109Xo0Gyrp2uiFaJ_wBnyYPKHQxbumCnV69eBFFg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img28">
+		<img src="http://www.go2peru.com/destinos/large/Trujillo_feb09-210.jpg"  width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img28">
+		<img src="http://www.go2peru.com/destinos/large/Trujillo_feb09-210.jpg" width="550px" height="500px">
+	</a>
+	<!-- thumbnail image wrapped in a link -->
+	<a href="#img29">
+		<img src="http://e.peruthisweek.e3.pe//ima/0/0/0/2/7/27241/624x468.jpg" width="200px" height="200px">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<a href="#_" class="lightbox" id="img29">
+		<img src="http://e.peruthisweek.e3.pe//ima/0/0/0/2/7/27241/624x468.jpg" width="550px" height="500px">
+	</a>
+</ul>
+
+
+<div >
+	
 	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Easter Island, Chile- Lying just south of the tropic of Capricorn, midway between Chile and Tahiti, Easter Island – or Rapa Nui – is one of the most remote islands on earth. Triangular in shape, with an extinct volcano at each corner, its 170 square kilometres offer a varied landscape of gently rolling hills, volcanic craters, rugged lava fields, and steep ocean cliffs, surrounded by the deep-blue waters of the South Pacific. The island is famous above all for nearly a thousand gigantic long-eared stone statues or moai, most of them 4 to 8 metres tall, and for over 300 stone platforms or ahu, many of megalithic proportions. It is a land of mystery, known in former times as Te Pito o te Henua, ‘the navel of the world’. </p>
-		<a href="http://davidpratt.info/easter1.htm" target="_blank" class="info">Read More</a>
+	<div >
+		<p>Chan Chan, Peru - The Chimu Kingdom built Chan Chan, in and around the city of Trujillo in Northern Peru, as its capital some 15 centuries ago. The planning of this huge city, the largest in pre-Columbian America, reflects a strict political and social strategy, marked by the city's division into nine 'citadels' or 'palaces' forming autonomous units. Some ruins lie in the center of a busy neighborhood of Trujillo (quite bizarre). Others, such as Huaca del Sol and Huaca de la Luna, require public transport to be reached.</p>
+		<a href="#" target="_blank" class="info">Read More</a>
 	</div>
-	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
-	</div>
+	<!-- <h2>Food</h2>
+	<div >
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla. Donec orci magna, efficitur a consequat sit amet, lacinia in nibh. Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus. Donec rutrum suscipit augue, ac volutpat enim finibus non. In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet. Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa. Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
+		<a href="http://www.lonelyplanet.com/peru/around-trujillo/sights/historic/chan-chan" target="_blank" class="info">Read More</a>
+	</div> -->
 </div>
 </div>
 </section>
-<section class="photo">
-<div class="photos">
-<div class="view view-first">
-	<h2>Chan Chan</h2>
-	<img src="Images/southamerica/chanchan.jpg" alt="http://cde.peru.com/ima/0/0/4/8/0/480275/611x458.jpg">
-	<h2>Description</h2>
-	<div class="text">
-		<p class="infotext">Chan Chan, Peru - The Chimu Kingdom built Chan Chan, in and around the city of Trujillo in Northern Peru, as its capital some 15 centuries ago. The planning of this huge city, the largest in pre-Columbian America, reflects a strict political and social strategy, marked by the city's division into nine 'citadels' or 'palaces' forming autonomous units. Some ruins lie in the center of a busy neighborhood of Trujillo (quite bizarre). Others, such as Huaca del Sol and Huaca de la Luna, require public transport to be reached.  </p>
-		<a href="http://www.lonelyplanet.com/peru/around-trujillo/sights/historic/chan-chan" target="_blank"  class="info">Read More</a>
-	</div>
-	<h2>Food</h2>
-	<div class="text">
-		<p class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, purus sit amet mollis dignissim, elit dui semper ex, in tincidunt elit diam vel nulla.
-			Donec orci magna, efficitur a consequat sit amet, lacinia in nibh.
-			Aenean risus dui, commodo eget dictum nec, sagittis sed magna. Mauris leo neque, pharetra in pharetra et, sollicitudin ornare lectus.
-			Donec rutrum suscipit augue, ac volutpat enim finibus non.
-			In eu venenatis diam. Fusce pellentesque accumsan sem, vel gravida erat efficitur sit amet.
-			Quisque luctus diam ut massa varius auctor. Etiam tristique ex ut magna rutrum venenatis. Donec dignissim, sem a scelerisque lacinia, diam lorem scelerisque justo, sed ultricies lorem augue ut massa.
-		Mauris lacinia nulla eu lorem suscipit, at sollicitudin est laoreet.</p>
-		<a href="#" class="info">Read More</a>
-	</div>
+
+<p id="back-top">
+<a href="#top"><span></span>Go Top</a>
+</p>
 </div>
-</div>
-</section>
 <div class="row">
 <div class="col-12">
 	<footer class="footer">
@@ -187,7 +497,7 @@
 				<h4>Navigation</h4>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="#">Gallery</a></li>
 					<li><a href="blog.html">Traveler's Blog</a></li>
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
@@ -230,24 +540,106 @@
 				<p>1-800-Travel1(8728351)</p> <a href="http://www.luc.edu">www.luc.edu</a>
 			</div>
 		</div>
-	</footer>
-</div>
-</div>
+	
 
+<div>
+		
+		<div >
+		
+		<!-- Social Media Buttons - CSS3 -->
+		<ul class="social" id="css3">
+		
+			<li class="instragram">
+				<a href="https://www.instagram.com/" target="_blank" class="info"><strong>Instragram</strong></a>
+			</li>
+			<li class="pinterest">
+				<a href="https://www.pinterest.com/" target="_blank" class="info"><strong>Pinterest</strong></a>
+			</li>
+			<li class="facebook">
+				<a href="http://www.facebook.com/" target="_blank" class="info"><strong>Facebook</strong></a>
+			</li>
+			<li class="flickr">
+				<a href="http://www.flickr.com/" target="_blank" class="info"><strong>Flickr</strong></a>
+			</li>
+			<li class="rss">
+				<a href="http://feeds2.feedburner.com/marcofolio" target="_blank" class="info"><strong>RSS</strong></a>
+			</li>
+			<li class="twitter">
+				<a href="http://twitter.com/" target="_blank" class="info"><strong>Twitter</strong></a>
+			</li>
+		</ul>
+		
+	</div>
+
+		</div>
+
+		</footer>
+</div>
+</div>
+</div>
 <script src="Scripts/js1.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="Scripts/jquery.slicknav.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#menu').slicknav({
-prependTo:'#menu-mobile'
-});
+<script type="text/javascript" src="Scripts/tipuesearch.js"></script>
+<script type="text/javascript" src="Scripts/tipuesearch_set.js"></script>
+<script type="text/javascript" src="Scripts/tipuesearch_content.js"></script>
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
 });
 </script>
 <script>
-$(document).ready(function() {
-$('#tipue_search_input').tipuesearch();
+		$(function() {
+
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() {
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+
+		});
+	</script>
+	<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
 });
 </script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="Scripts/slidebars.min.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+    </script>
+    <!-- Slidebars Theme JS
+       This should be included after you have initiated Slidebars. -->
+    <script src="Scripts/slidebars-theme.js"></script>
 </body>
 </html>
