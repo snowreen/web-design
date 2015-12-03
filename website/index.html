@@ -13,12 +13,14 @@
 <body>
 	<header>
 		<div class="row">
-			<div class="col-10">
+			<div class="col-a">
 				<div id="superhead">
 					<a href="index.html"><img src="Images/LOGO/logo1.png" alt="Logo"style= "width:118px; height:50px; margin: 7px 0 -2px 10px"></a>
-					<h1 class="header">Ancient  | History | Travel | Food</h1>
 				</div>
 			</div>
+			<div class="col-b">
+					<h1 class="header">Ancient  | History | Travel | Food</h1>
+				</div>
 			<div class="col-2"><form id="search" action="search.html">
 <input type="text" name="q" id="tipue_search_input" placeholder="Search" autocomplete="off" required>
 </form></div>
@@ -34,7 +36,12 @@
 				<div class="navicon-line"></div>
 				<div class="navicon-line"></div>
 			</div>
-			
+			<!-- Right Slidebar control -->
+			<div class="sb-toggle-right">
+				<div class="navicon-line"></div>
+				<div class="navicon-line"></div>
+				<div class="navicon-line"></div>
+			</div>
 			
 			<!-- Menu Items -->
 			<ul class="sb-navbar-menu">
@@ -83,11 +90,37 @@
 			</ul>
 			
 		</div><!-- /.sb-slidebar .sb-left -->
-
+<!-- Right Slidebars -->
+		<div class="sb-slidebar sb-right">	
+			
+			<!-- Widgets -->
+			<aside class="sb-widget">
+				<div class="sb-widget-header">
+					<h3 class="sb-widget-title">Text Widget</h3>
+				</div>
+				<div class="sb-widget-content">
+					<p>Text widget goes here.</p>
+				</div>
+			</aside>
+			
+			<aside class="sb-widget">
+				<div class="sb-widget-header">
+					<h3 class="sb-widget-title">List Widget</h3>
+				</div>
+				<div class="sb-widget-content">
+					<ul>
+						<li>List</li>
+						<li>of</li>
+						<li>Items</li>
+					</ul>
+				</div>
+			</aside>
+			
+		</div><!-- /.sb-slidebar .sb-right -->
 <div id="sb-site">
+<div class="row">
 <div class="wrapper">
 <div class="travelwrap">
-   
 	<h2>Ancient Adventures</h2>
 	
 	<p>While some think that traveling is a time where one finds relaxation, some of us enjoy a thrilling expedition.
@@ -97,16 +130,16 @@
 		normal day to day routines and travel some where new. We will accomplish this by sharing information from our travel experiences and
 	research. Below we have listed regions where the reader could choose to go for their next vacation or adventure.</p>
 </div>
-	<div id="slideshow">
-	   <div><img src="./Images/homepage/compass.jpg">
-	   </div>
-	   <div>
-	     <img src="Images/homepage/national-museum-of-singapore-at-night.jpg">
-	   </div>
-	   <div>
-	     
-	   </div>
+
+
+<div class="slider" id="main-slider"><!-- outermost container element -->
+	<div class="slider-wrapper"><!-- innermost wrapper element -->
+		<div class="slide" data-image="./Images/homepage/compass.jpg"></div><!-- slides -->
+		<div class="slide" data-image="Images/homepage/national-museum-of-singapore-at-night.jpg"></div>
+		<div class="slide" data-image="http://lorempixel.com/1024/400/city"></div>
 	</div>
+</div>	</div>
+
 </div>
 
 <div class="row">
@@ -158,7 +191,6 @@
 				<h4>Navigation</h4>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Gallery</a></li>
 					<li><a href="blog.html">Traveler's Blog</a></li>
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
@@ -182,14 +214,9 @@
 		<div class="col-3">
 			<div class="mostvistedlinks">
 				<h4>Most Visted Sites</h4>
-			  	<ul>
-					<li><a href="#">Asia Top 10</a></li>
-					<li><a href="#">Europe Top 10</a></li>
-					<li><a href="#">Africa Top 10</a></li>
-					<li><a href="#">North America Top 10</a></li>
-					<li><a href="#">South America Top 10</a></li>
-					<li><a href="#">Central America Top 10</a></li>
-				</ul>
+
+			<li><a href="mostvisited.html">Top 10 Locations</a></li>
+
 			</div>
 		</div>
 
@@ -249,20 +276,74 @@ $(document).ready(function() {
 });
 </script>
 <script>
-		$(function() {
-
-			$("#slideshow > div:gt(0)").hide();
-
-			setInterval(function() {
-			  $('#slideshow > div:first')
-			    .fadeOut(1000)
-			    .next()
-			    .fadeIn(1000)
-			    .end()
-			    .appendTo('#slideshow');
-			},  3000);
-
+	(function( $ ) {
+	$.fn.slideshow = function( options ) {
+		options = $.extend({
+			slides: ".slide",
+			speed: 3000,
+			easing: "linear"
+			
+		}, options);
+		
+		var timer = null;
+		var index = 0;
+		
+		var slideTo = function( slide, element ) {
+			var $currentSlide = $( options.slides, element ).eq( slide );
+			
+			$currentSlide.stop( true, true ).
+			animate({
+				opacity: 1
+			}, options.speed, options.easing ).
+			siblings( options.slides ).
+			css( "opacity", 0 );	
+			
+		};
+		
+		var autoSlide = function( element ) {
+			timer = setInterval(function() {
+				index++;
+				if( index == $( options.slides, element ).length ) {
+					index = 0;
+				}
+				slideTo( index, element );
+			}, options.speed);	
+		};
+		
+		var startStop = function( element ) {
+			element.hover(function() {
+				clearInterval( timer );
+				timer = null;	
+			}, function() {
+				autoSlide( element );	
+			});
+		};
+		
+		return this.each(function() {
+			var $element = $( this ),
+				$previous = $( options.previous, $element ),
+				$next = $( options.next, $element ),
+				index = 0,
+				total = $( options.slides ).length;
+				
+				$( options.slides, $element ).each(function() {
+					var $slide = $( this );
+					var image = $slide.data( "image" );
+					$slide.css( "backgroundImage", "url(" + image + ")" );
+				});
+				
+				autoSlide( $element );
+				startStop( $element );
+			
 		});
+	};
+	
+	$(function() {
+		$( "#main-slider" ).slideshow();
+		
+	});
+	
+})( jQuery );
 	</script>
    <script src="Scripts/slidebars.min.js"></script>
     <script>

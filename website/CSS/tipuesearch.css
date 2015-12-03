@@ -5,11 +5,10 @@ Copyright (c) 2015 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
-
-
 #tipue_search_input
 {
-     font: 13px/1.6 'open sans', sans-serif;
+     font-family: inherit;
+     font-size: 100%;
 	color: #333;
      height: 40px;
 	padding: 9px 10px 9px 32px;
@@ -21,7 +20,14 @@ http://www.tipue.com/search
      box-shadow: none; 
 	outline: 0;
 	margin: 0;
-	background: #fff url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+     -webkit-border-radius: 10em;
+     -moz-border-radius: 10em;
+     border-radius: 10em;
+     
+     -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+     transition: all .5s;
 }
 
 #tipue_search_content

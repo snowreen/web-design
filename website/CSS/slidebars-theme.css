@@ -172,7 +172,7 @@ span.sb-caret { /* Caret Down */
 	top: 0;
 	left: auto;
 	right: auto;
-	z-index: 1000;
+	z-index: 9999;
 	background-color: #219AEB; /* Bar colour. */
 	
 	box-shadow:
@@ -220,15 +220,16 @@ html.sb-android .sb-navbar {
 .sb-navbar-menu li {
 	padding: 0;
 	margin: 0;
-	display: block;
-	float: left;
+	display: inline-block;
+	white-space: nowrap; 
 }
 
 .sb-navbar-menu li a {
 	display: inline-block;
 	color: #f2f2f2; /* Navbar link colour */
-	padding: 14px;
+	padding: 11px;
 	text-decoration: none;
+	white-space: nowrap; 
 }
 
 .sb-navbar-menu li a:hover {
@@ -279,7 +280,7 @@ html.sb-android .sb-navbar {
  * 006 - Media Queries
  */
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
 	/* This is entirely optional, it hides the navbar menu items when device width is under 768px. */
 	.sb-navbar-menu {
 		display: none;
