@@ -103,8 +103,32 @@ h1   {color: black}
 	vertical-align: top;
 	text-align: center;
 	width: 49%;
+	height: 280px;
 }
-
+.slider {
+	display: inline-block;
+	width: 50%;
+	overflow: hidden;
+	position: relative;
+	height: 280px;
+}
+.slider-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0;
+}f
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
 .destinationwrap{
 	display: inline-block;
 	position: relative;
@@ -354,35 +378,6 @@ h1   {color: black}
 		width: 100%;
 		height: auto;
 	}
-}
-.slider {
-	display: inline-block;
-	width: 50%;
-	overflow: hidden;
-	position: relative;
-	height: 400px;
-}
-
-.slider-wrapper {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-.slide {
-	float: left;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0;
-}
-
-.slider-wrapper > .slide:first-child {
-	opacity: 1;
-}
-
 
 /* SOCIAL ICONS - GENERAL */
 .social { list-style:none; margin:30px auto; width:464px; }
